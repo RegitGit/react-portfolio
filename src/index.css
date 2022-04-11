@@ -10,6 +10,34 @@
     text-decoration: none;
 }
 
+.typed-cursor {
+    display: inline;
+    opacity: 1;
+    animation: blink .7s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+span {
+    display: inline;
+}
+
+span::after, h1::after, h5::after {
+    content: "_";
+    opacity: 1;
+    animation: blink .7s infinite;
+}
+
 :root {
     --color-bg: #1f1f38;
     --color-bg-variant: #2c2c6c;
