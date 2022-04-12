@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import "./header.css"
 import Typed from 'typed.js'
+import HeaderSocials from "./headerSocials"
 
 const Header = () => {
 
@@ -52,9 +53,10 @@ const Header = () => {
   return (
     <header>
       <div className="container header__container">
-        <span ref={el} className="typewriter typewriter-blink"></span>
+        <h5 ref={el} className="typewriter typewriter-blink"></h5>
         <h1 ref={el2} className="typewriter-blink"></h1>
         <h5 ref={el3} className="text-light typewriter-blink"></h5>
+        <HeaderSocials/>
       </div>
     </header>
   )
