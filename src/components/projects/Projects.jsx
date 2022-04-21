@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import "./projects.css"
-import { useState } from 'react'
 
 const data = [
   {
