@@ -2,6 +2,6 @@
     display: none;
 }
 
-.projects__tagSelected::after {
-    content: X;
+.projects__tagSelected {
+    color: red;
 }
