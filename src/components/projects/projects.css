@@ -1,3 +1,7 @@
 .projects__hideProject {
     display: none;
 }
+
+.projects__tagSelected::after {
+    content: X;
+}

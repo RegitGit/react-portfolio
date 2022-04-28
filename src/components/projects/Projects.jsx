@@ -33,18 +33,32 @@ const Projects = () => {
     let parents = document.getElementsByClassName("projects__item");
     if (activeTag === "") return;
     else if (currentTag === activeTag) {
-      activeTag = "";
-      currentTag = "";
+      
       for (let i = 0; i < parents.length; i++) {
           let parent = parents[i];
           parent.classList.remove("projects__hideProject");
-        }
+          let child = parent.querySelector("." + activeTag)
+          if (child) {
+            child.classList.remove("projects__tagSelected");
+          }
+      }
+      activeTag = "";
+      currentTag = "";
       return;
     }
-    currentTag = activeTag;
+    
     for (let i = 0; i < parents.length; i++) {
       let parent = parents[i];
       let child = parent.querySelector("." + activeTag)
+      if (child) {
+        child.classList.add("projects__tagSelected");
+      }
+      if (currentTag !== "") {
+          let childCurrent = parent.querySelector("." + currentTag)
+          if (childCurrent) {
+            childCurrent.classList.remove("projects__tagSelected");
+        }
+      }
       if (!child) {
         parent.classList.add("projects__hideProject");
       }
@@ -52,6 +66,7 @@ const Projects = () => {
         parent.classList.remove("projects__hideProject");
       }
     }
+    currentTag = activeTag;
   }
 
   return (
@@ -73,7 +88,7 @@ const Projects = () => {
                   {
                     tags.map((tag, index) => {
                       return (
-                        <li key={index} onClick={() => hideProjects("projects__" + tag.replace(/ /g, "_"))} className={"projects__" + tag.replace(/ /g, "_")}>{tag}</li>
+                        <li key={index} onClick={(e) => hideProjects("projects__" + tag.replace(/ /g, "_"), e.target)} className={"projects__" + tag.replace(/ /g, "_")}>{tag}</li>
                       )
                     })
                   }
