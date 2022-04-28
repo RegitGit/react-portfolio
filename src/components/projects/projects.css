@@ -25,7 +25,7 @@
 }
 .projects__tagSelected::after {
     padding-left: 1rem;
-    content: "X";
+    
 }
 .projects__tagSelected:hover {
     color: black;
