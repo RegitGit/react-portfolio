@@ -29,16 +29,15 @@ const data = [
 const Projects = () => {
   // Tag ordering
   let currentTag = "";
-  function test(activeTag) {
+  function hideProjects(activeTag) {
     let parents = document.getElementsByClassName("projects__item");
-    console.log(activeTag)
-    console.log(currentTag)
     if (activeTag === "") return;
     else if (currentTag === activeTag) {
       activeTag = "";
+      currentTag = "";
       for (let i = 0; i < parents.length; i++) {
           let parent = parents[i];
-          parent.style.display = "block";
+          parent.classList.remove("projects__hideProject");
         }
       return;
     }
@@ -47,10 +46,10 @@ const Projects = () => {
       let parent = parents[i];
       let child = parent.querySelector("." + activeTag)
       if (!child) {
-        parent.style.display = "none";
+        parent.classList.add("projects__hideProject");
       }
       else {
-        parent.style.display = "block";
+        parent.classList.remove("projects__hideProject");
       }
     }
   }
@@ -74,7 +73,7 @@ const Projects = () => {
                   {
                     tags.map((tag, index) => {
                       return (
-                        <li key={index} onClick={() => test("projects__" + tag.replace(/ /g, "_"))} className={"projects__" + tag.replace(/ /g, "_")}>{tag}</li>
+                        <li key={index} onClick={() => hideProjects("projects__" + tag.replace(/ /g, "_"))} className={"projects__" + tag.replace(/ /g, "_")}>{tag}</li>
                       )
                     })
                   }
