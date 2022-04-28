@@ -88,7 +88,7 @@ const Projects = () => {
                   {
                     tags.map((tag, index) => {
                       return (
-                        <li key={index} onClick={(e) => hideProjects("projects__" + tag.replace(/ /g, "_"), e.target)} className={"projects__" + tag.replace(/ /g, "_")}>{tag}</li>
+                        <li key={index} onClick={(e) => hideProjects("projects__" + tag.replace(/ /g, "_"), e.target)} className={"projects__tag projects__" + tag.replace(/ /g, "_")}>{tag}</li>
                       )
                     })
                   }

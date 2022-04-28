@@ -2,6 +2,32 @@
     display: none;
 }
 
+.projects__tag {
+    width: max-content;
+    display: inline-block;
+    color:grey;
+    background-color: whitesmoke;    
+    padding: 0.75rem 1.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid black;
+    transition: var(--transition);
+}
+
+.projects__tag:hover {
+    color: black;
+    background: grey;
+}
+
 .projects__tagSelected {
-    color: red;
+    color: black;
+    background: green;
+}
+.projects__tagSelected::after {
+    padding-left: 1rem;
+    content: "X";
+}
+.projects__tagSelected:hover {
+    color: black;
+    background: crimson;
 }
