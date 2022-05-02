@@ -18,7 +18,7 @@ const data = [
     id: 2,
     image: IMG2,
     title: "Title2",
-    explanation: "Test",
+    explanation: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos cupiditate doloremque ipsam est aperiam ab vitae ullam itaque praesentium? Consequatur.",
     tags: ["Arduino", "Android Studio"],
     demo: "link"
   },
@@ -37,7 +37,7 @@ const Projects = () => {
   // Tag ordering
   let currentTag = "";
   function hideProjects(activeTag) {
-    let parents = document.getElementsByClassName("projects__item");
+    let parents = document.getElementsByClassName("projects__article");
     if (activeTag === "") return;
     else if (currentTag === activeTag) {
       
@@ -82,26 +82,28 @@ const Projects = () => {
         {
           data.map(({id, image, title, explanation, tags, demo}) => {
             return (
-              <article key={id} className='projects__item'>
-                <div className='projects__item-image-container'>
-                  <img src={image} alt={title} className="projects__item-image"/>
-                </div>
-                <div className='projects__item-cta'>
-                  <h3>{title}</h3>
-                  <p>{explanation}</p>
-                  <a href={demo} className="btn btn-primary projects__item-link" target="_blank"><FiExternalLink size={24}/></a>
-                  <div className='projects__tags'>
-                    <ul>
-                    {
-                      tags.map((tag, index) => {
-                        return (
-                          <li key={index} onClick={(e) => hideProjects("projects__" + tag.replace(/ /g, "_"), e.target)} className={"projects__tag projects__" + tag.replace(/ /g, "_")}>{tag}</li>
-                          )
-                        })
-                      }
-                    </ul>
+              <article key={id} className="projects__article">
+                <div className="projects__item">
+                  <div className='projects__item-cta'>
+                    <h3>{title}</h3>
+                    <a href={demo} className="btn btn-primary projects__item-link" target="_blank"><FiExternalLink size={24}/></a>
+                    <div className='projects__tags'>
+                      <ul>
+                      {
+                        tags.map((tag, index) => {
+                          return (
+                            <li key={index} onClick={(e) => hideProjects("projects__" + tag.replace(/ /g, "_"), e.target)} className={"projects__tag projects__" + tag.replace(/ /g, "_")}>{tag}</li>
+                            )
+                          })
+                        }
+                      </ul>
+                    </div>
+                  </div>
+                  <div className='projects__item-image-container'>
+                    <img src={image} alt={title} className="projects__item-image"/>
                   </div>
                 </div>
+                <p className='projects__text'>{explanation}</p>
               </article>
             )
           })
