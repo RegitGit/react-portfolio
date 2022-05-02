@@ -14,6 +14,13 @@
     padding: 1.2rem;
     border-radius: 2rem;
     border: 1px solid var(--color-primary);
+    background-color: var(--color-bg-variant);
+    transition: var(--transition);
+}
+
+.projects__article:hover {
+    background-color: transparent;
+
 }
 
 .projects__item-image-container {
@@ -42,18 +49,18 @@
 }
 
 .projects__tags {
-    margin-top: 0.4rem;
+    margin-top: 0.6rem;
 }
 
 .projects__tag {
     width: max-content;
     display: inline-block;
     margin-right: 0.2rem;
-    margin-top: 0.2rem;
+    margin-top: 0.3rem;
     color:grey;
     background-color: whitesmoke;    
-    font-size: 0.85rem;
-    padding: 0.75rem 1.2rem;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 6rem;
     cursor: pointer;
     border: 1px solid black;
@@ -86,4 +93,23 @@
 .projects__tagSelected:hover {
     color: black;
     background: crimson;
+}
+
+
+/* TABLET MEDIA QUERIES */
+
+@media screen and (max-width: 1024px) {
+    .projects__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+    }
+}
+
+/* PHONES MEDIA QUERIES */
+
+@media screen and (max-width: 600px) {
+    .projects__container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
 }
