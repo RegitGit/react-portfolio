@@ -4,6 +4,8 @@ import IMG1 from "./IMG1.jpg"
 import IMG2 from "./IMG2.jpg"
 import IMG3 from "./IMG3.jpg"
 import {FiExternalLink} from "react-icons/fi"
+import Typed from 'typed.js'
+import { useInView } from 'react-intersection-observer';
 
 const data = [
   {
@@ -32,8 +34,24 @@ const data = [
   },
 ]
 
+var firstTimeViewed = false;
 
 const Projects = () => {
+  const { ref, inView, entry } = useInView({
+    rootMargin: "50px",
+  });
+  
+  if (inView && !firstTimeViewed) {
+    firstTimeViewed = true;
+    
+    new Typed(entry.target, {
+      strings: ["My"],
+      startDelay: 1000,
+      typeSpeed: 100,
+      showCursor: false
+    });
+  }
+  
   // Tag ordering
   let currentTag = "";
   function hideProjects(activeTag) {
@@ -78,6 +96,10 @@ const Projects = () => {
 
   return (
     <section id='projects'>
+      <div className='container'>
+        <h1 ref={ref} id='projects__title'></h1>
+        <h3 className='text-light'>recent work</h3>
+      </div>
       <div className='container projects__container'>
         {
           data.map(({id, image, title, explanation, tags, demo}) => {
