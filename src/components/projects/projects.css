@@ -31,6 +31,10 @@
     height: 100%;
 }
 
+.projects__headline {
+    margin-bottom: 0.8rem;
+}
+
 .projects__item {
     height: 13rem;
 }

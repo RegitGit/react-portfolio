@@ -38,17 +38,23 @@ var firstTimeViewed = false;
 
 const Projects = () => {
   const { ref, inView, entry } = useInView({
-    rootMargin: "50px",
+    rootMargin: "-250px",
   });
   
   if (inView && !firstTimeViewed) {
     firstTimeViewed = true;
     
     new Typed(entry.target, {
-      strings: ["My"],
-      startDelay: 1000,
-      typeSpeed: 100,
-      showCursor: false
+      strings: ["My recent work"],
+      startDelay: 500,
+      typeSpeed: 50,
+      showCursor: false,
+      onComplete() {
+        setTimeout(() => {
+          entry.target.classList.remove("typewriter-blink");
+          entry.target.classList.add("typewriter-fade-out");
+        }, 1900);
+      }
     });
   }
   
@@ -97,8 +103,7 @@ const Projects = () => {
   return (
     <section id='projects'>
       <div className='container'>
-        <h1 ref={ref} id='projects__title'></h1>
-        <h3 className='text-light'>recent work</h3>
+        <h3 ref={ref} id='projects__title' className='typewriter typewriter-blink projects__headline'></h3>
       </div>
       <div className='container projects__container'>
         {
