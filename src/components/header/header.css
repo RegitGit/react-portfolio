@@ -1,5 +1,4 @@
 header {
-    height: 100vh;
     overflow: hidden;
 }
 
@@ -26,20 +25,6 @@ header > svg {
     100% {
         opacity: 1;
     }
-}
-
-.typewriter::after {
-    content: "_";
-    opacity: 1;
-    transition: opacity 2s ease-out;
-}
-
-.typewriter-blink::after {    
-    animation: blink .85s infinite;
-}
-
-.typewriter-fade-out::after {
-    opacity: 0;
 }
 
 /* CTA */

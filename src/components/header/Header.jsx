@@ -13,7 +13,7 @@ const Header = () => {
     new Typed(el.current, {
       strings: ["Hello, I'm"],
       startDelay: 1000,
-      typeSpeed: 100,
+      typeSpeed: 130,
       showCursor: false,
       onComplete() {
         setTimeout(() => {
@@ -22,7 +22,7 @@ const Header = () => {
           new Typed(el2.current, {
             strings: ["Regit"],
             startDelay: 60,
-            typeSpeed: 120,
+            typeSpeed: 150,
             showCursor: false,
             onComplete() {
               setTimeout(() => {
@@ -31,7 +31,7 @@ const Header = () => {
               new Typed(el3.current, {
                 strings: ["Unity Developer", "Web Developer", "3D Developer", "App Developer??", "Developer."],
                 startDelay: 200,
-                typeSpeed: 50,
+                typeSpeed: 60,
                 backSpeed: 20,
                 backDelay: 250,
                 showCursor: false,

@@ -1,0 +1,9 @@
+.image__container {
+    background: linear-gradient(white, transparent);
+    width: 22rem;
+    position: relative;
+    left: calc(50% - 11rem);
+    border-radius: 12rem 12rem 0 0;
+    margin-top: 3rem;
+    margin-bottom: 7rem;
+}

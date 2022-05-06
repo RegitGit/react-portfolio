@@ -119,6 +119,20 @@ img {
     object-fit: cover;
 }
 
+.typewriter::after {
+    content: "_";
+    opacity: 1;
+    transition: opacity 2s ease-out;
+}
+
+.typewriter-blink::after {    
+    animation: blink .85s infinite;
+}
+
+.typewriter-fade-out::after {
+    opacity: 0;
+}
+
 /* TABLET MEDIA QUERIES */
 
 @media screen and (max-width: 1024px) {
