@@ -1,6 +1,5 @@
 header {
     height: 100vh;
-    padding-top: 7rem;
     overflow: hidden;
 }
 
@@ -8,9 +7,14 @@ header {
     text-align: left;
     height: 100%;
     vertical-align: middle;
+    padding-top: 12rem;
     /* position: relative; */
 }
 
+header > svg {
+    position: absolute;
+    z-index: -1;
+}
 
 @keyframes blink {
     0% {

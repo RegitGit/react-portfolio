@@ -53,7 +53,7 @@ const Projects = () => {
         setTimeout(() => {
           entry.target.classList.remove("typewriter-blink");
           entry.target.classList.add("typewriter-fade-out");
-        }, 1900);
+        }, 1200);
       }
     });
   }
