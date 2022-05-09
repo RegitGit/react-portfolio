@@ -38,18 +38,18 @@ const experienceData = [
   {
     id: 1,
     image: IMG1,
-    title: "Title",
-    explanation: "Test",
-    tags: ["JS", "CSS"],
-    demo: "link"
+    title: "HS Hannover",
+    subtitle: "Mediendesigninformatik",
+    text: "Test",
+    link: ""
   },
   {
     id: 2,
     image: IMG2,
-    title: "Title2",
-    explanation: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos cupiditate doloremque ipsam est aperiam ab vitae ullam itaque praesentium? Consequatur.",
-    tags: ["Arduino", "Android Studio"],
-    demo: "link"
+    title: "Studio B12",
+    subtitle: "Unity/Web Developer",
+    text: "Test",
+    link: ""
   }
 ]
 
@@ -88,6 +88,24 @@ const About = () => {
           )
         })
       }
+      <div className="experiences__container container">
+        {
+          experienceData.map(({id, image, title, subtitle, text}) => {
+            return (
+              <div key={id} className="experiences__experience">
+                <div className='experiences__header'>
+                  <div className='experiences__item-image-container'>
+                    <img src={image} alt={title} className="projects__item-image"/>
+                  </div>
+                  <h2>{title}</h2>
+                  <h4 className='text-light'>{subtitle}</h4>
+                </div>
+                <p className='projects__text'>{text}</p>
+              </div>
+            )
+          })
+        }
+        </div>
       </div>
     </section>
   )

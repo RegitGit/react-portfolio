@@ -121,10 +121,10 @@ const Projects = () => {
                     <a href={demo} className="btn btn-primary projects__item-link" target="_blank"><FiExternalLink size={24}/></a>
                     <div className='projects__tags'>
                       <ul>
-                      {
-                        tags.map((tag, index) => {
-                          return (
-                            <li key={index} onClick={(e) => hideProjects("projects__" + tag.replace(/ /g, "_"), e.target)} className={"projects__tag projects__" + tag.replace(/ /g, "_")}>{tag}</li>
+                        {
+                          tags.map((tag, index) => {
+                            return (
+                              <li key={index} onClick={(e) => hideProjects("projects__" + tag.replace(/ /g, "_"), e.target)} className={"projects__tag projects__" + tag.replace(/ /g, "_")}>{tag}</li>
                             )
                           })
                         }

@@ -47,3 +47,31 @@
     width: 0px;
     transition: var(--transition);
 }
+
+.experiences__container {
+    display: flex;
+    margin-top: 4rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.experiences__experience {
+    background: crimson;
+    width: 30rem;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    height: 18rem;
+}
+
+.experiences__item-image-container {
+    float: left;
+    width: 6rem;
+    margin-right: 1rem;
+    border-radius: 0.4rem;
+    /* background-color: var(--color-primary-variant); */
+}
+
+.experiences__header {
+    height: max-content;
+}
