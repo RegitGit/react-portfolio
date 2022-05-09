@@ -102,6 +102,10 @@
     background: crimson;
 }
 
+.svg__flex {
+    display: flex;
+    flex-direction: column;
+}
 
 /* TABLET MEDIA QUERIES */
 

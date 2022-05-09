@@ -5,5 +5,15 @@
     left: calc(50% - 11rem);
     border-radius: 12rem 12rem 0 0;
     margin-top: 3rem;
-    margin-bottom: 7rem;
+}
+
+.cta {
+    margin-top: 2rem;
+}
+
+.cta > a {
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0)
 }

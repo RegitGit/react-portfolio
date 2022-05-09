@@ -53,7 +53,7 @@ const Projects = () => {
         setTimeout(() => {
           entry.target.classList.remove("typewriter-blink");
           entry.target.classList.add("typewriter-fade-out");
-        }, 1200);
+        }, 2000);
       }
     });
   }
@@ -101,6 +101,11 @@ const Projects = () => {
   }
 
   return (
+    <div>
+      <div className="svg__flex">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fillOpacity="1" d="M0,256L1440,96L1440,320L0,320Z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fillOpacity="1" d="M0,96L1440,32L1440,0L0,0Z"></path></svg>
+      </div>
     <section id='projects'>
       <div className='container'>
         <h3 ref={ref} id='projects__title' className='typewriter typewriter-blink projects__headline'></h3>
@@ -137,6 +142,7 @@ const Projects = () => {
         }
       </div>
     </section>
+        </div>
   )
 }
 

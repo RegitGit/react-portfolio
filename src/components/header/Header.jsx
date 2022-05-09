@@ -53,11 +53,11 @@ const Header = () => {
   return (
     <header>     
       <svg style={{width:"100vw"}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fillOpacity="1" d="M0,50L1440,196L1440,0L0,0Z"></path></svg>
+        <HeaderSocials/>
       <div className="container header__container">
         <h5 ref={el} className="typewriter typewriter-blink"></h5>
         <h1 ref={el2} className="typewriter-blink"></h1>
         <h3 ref={el3} className="text-light typewriter-blink"></h3>
-        <HeaderSocials/>
       </div>
     </header>
   )
