@@ -7,13 +7,43 @@
     margin-top: 3rem;
 }
 
-.cta {
-    margin-top: 2rem;
+.about__cta {
+    padding-top: 2rem;
 }
 
-.cta > a {
+.about__cta > a {
     position: absolute;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, 0)
+}
+
+.skills__container {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills__skill {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-top: 1rem;
+    padding: 0.7rem;
+    border-radius: 1rem 1rem;
+    background: var(--color-bg-variant);
+}
+
+.skills__fullBar {
+    margin-left: 16px;
+    height: 10px;
+    width: 180px;
+}
+
+.skills__rect {
+    height: 10px;
+    width: 0px;
+    transition: var(--transition);
 }
