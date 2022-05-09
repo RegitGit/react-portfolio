@@ -1,8 +1,8 @@
 import React from 'react'
 import "./projects.css"
-import IMG1 from "./IMG1.jpg"
-import IMG2 from "./IMG2.jpg"
-import IMG3 from "./IMG3.jpg"
+import IMG1 from "../../assets/imgs/IMG1.jpg"
+import IMG2 from "../../assets/imgs/IMG2.jpg"
+import IMG3 from "../../assets/imgs/IMG3.jpg"
 import {FiExternalLink} from "react-icons/fi"
 import Typed from 'typed.js'
 import { useInView } from 'react-intersection-observer';

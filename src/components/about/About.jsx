@@ -3,6 +3,8 @@ import "./about.css"
 import MY_IMAGE from "../../assets/imgs/anon.png"
 import CV from "../../assets/pdfs/test_corona.pdf"
 import { useInView } from 'react-intersection-observer'
+import IMG1 from "../../assets/imgs/IMG1.jpg"
+import IMG2 from "../../assets/imgs/IMG2.jpg"
 
 const skillsData = [
   {
@@ -29,6 +31,25 @@ const skillsData = [
     id: 4,
     name: "Unity",
     percentage: 90
+  }
+]
+
+const experienceData = [
+  {
+    id: 1,
+    image: IMG1,
+    title: "Title",
+    explanation: "Test",
+    tags: ["JS", "CSS"],
+    demo: "link"
+  },
+  {
+    id: 2,
+    image: IMG2,
+    title: "Title2",
+    explanation: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos cupiditate doloremque ipsam est aperiam ab vitae ullam itaque praesentium? Consequatur.",
+    tags: ["Arduino", "Android Studio"],
+    demo: "link"
   }
 ]
 
