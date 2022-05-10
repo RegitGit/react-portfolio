@@ -12,7 +12,7 @@ const Header = () => {
   useEffect(() => {
     new Typed(el.current, {
       strings: ["Hello, I'm"],
-      startDelay: 1000,
+      startDelay: 500,
       typeSpeed: 130,
       showCursor: false,
       onComplete() {

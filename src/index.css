@@ -119,6 +119,10 @@ img {
     object-fit: cover;
 }
 
+.small-headline {
+    margin-bottom: 0.8rem;
+}
+
 .typewriter::after {
     content: "_";
     opacity: 1;

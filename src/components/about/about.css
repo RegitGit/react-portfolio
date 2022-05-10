@@ -12,14 +12,10 @@
 }
 
 .about__cta > a {
-    position: absolute;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, 0)
+    text-align: center
 }
 
 .skills__container {
-    margin-top: 4rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -58,10 +54,12 @@
 
 .experiences__experience {
     background: crimson;
-    width: 30rem;
+    width: 28rem;
+    min-width: 28rem;
     padding: 1.5rem;
     border-radius: 2rem;
     height: 18rem;
+    margin-top: 2rem;
 }
 
 .experiences__item-image-container {
@@ -73,5 +71,5 @@
 }
 
 .experiences__header {
-    height: max-content;
+    display: flex;
 }

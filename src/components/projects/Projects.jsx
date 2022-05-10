@@ -108,7 +108,7 @@ const Projects = () => {
       </div>
     <section id='projects'>
       <div className='container'>
-        <h3 ref={ref} id='projects__title' className='typewriter typewriter-blink projects__headline'></h3>
+        <h3 ref={ref} className='typewriter typewriter-blink small-headline'></h3>
       </div>
       <div className='container projects__container'>
         {

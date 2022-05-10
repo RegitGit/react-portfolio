@@ -10,8 +10,8 @@
 }
 
 .projects__article {
-    width: 456px;
-    min-width: 456px;
+    width: 28rem;
+    min-width: 28rem;
     padding: 1.2rem;
     border-radius: 2rem;
     border: 1px solid var(--color-primary);
@@ -31,10 +31,6 @@
     border-radius: 2.4rem;
     /* background-color: var(--color-primary-variant); */
     height: 100%;
-}
-
-.projects__headline {
-    margin-bottom: 0.8rem;
 }
 
 .projects__item {

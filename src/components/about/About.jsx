@@ -5,6 +5,7 @@ import CV from "../../assets/pdfs/test_corona.pdf"
 import { useInView } from 'react-intersection-observer'
 import IMG1 from "../../assets/imgs/IMG1.jpg"
 import IMG2 from "../../assets/imgs/IMG2.jpg"
+import Typed from 'typed.js'
 
 const skillsData = [
   {
@@ -39,8 +40,8 @@ const experienceData = [
     id: 1,
     image: IMG1,
     title: "HS Hannover",
-    subtitle: "Mediendesigninformatik",
-    text: "Test",
+    subtitle: "Mediendesigninformatik B.Sc.",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sapiente deleniti tempora cumque saepe vel.",
     link: ""
   },
   {
@@ -48,7 +49,7 @@ const experienceData = [
     image: IMG2,
     title: "Studio B12",
     subtitle: "Unity/Web Developer",
-    text: "Test",
+    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, ad!",
     link: ""
   }
 ]
@@ -62,8 +63,20 @@ const About = () => {
   
   if (inView && !firstTimeViewed) {
     firstTimeViewed = true;
+    console.log("lol")
     
-    entry.target.style.width = "180px";
+    new Typed(entry.target, {
+      strings: ["My skills"],
+      startDelay: 500,
+      typeSpeed: 50,
+      showCursor: false,
+      onComplete() {
+        setTimeout(() => {
+          entry.target.classList.remove("typewriter-blink");
+          entry.target.classList.add("typewriter-fade-out");
+        }, 2000);
+      }
+    });
   }
 
   return (
@@ -73,6 +86,9 @@ const About = () => {
         <div className='about__cta'>
           <a href={CV} download>Download CV</a>
         </div>
+      </div>
+      <div className='container'>
+        <h3 ref={ref} className='typewriter typewriter-blink small-headline'></h3>
       </div>
       <div className="skills__container container">
       {
@@ -88,6 +104,7 @@ const About = () => {
           )
         })
       }
+      </div>
       <div className="experiences__container container">
         {
           experienceData.map(({id, image, title, subtitle, text}) => {
@@ -97,15 +114,16 @@ const About = () => {
                   <div className='experiences__item-image-container'>
                     <img src={image} alt={title} className="projects__item-image"/>
                   </div>
-                  <h2>{title}</h2>
-                  <h4 className='text-light'>{subtitle}</h4>
+                  <div>
+                    <h2>{title}</h2>
+                    <h4 className='text-light'>{subtitle}</h4>
+                  </div>
                 </div>
                 <p className='projects__text'>{text}</p>
               </div>
             )
           })
-        }
-        </div>
+        } 
       </div>
     </section>
   )
