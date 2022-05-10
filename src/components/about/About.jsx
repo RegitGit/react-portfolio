@@ -42,7 +42,7 @@ const experienceData = [
     title: "HS Hannover",
     subtitle: "Mediendesigninformatik B.Sc.",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sapiente deleniti tempora cumque saepe vel.",
-    link: ""
+    link: "https://f4.hs-hannover.de/studium/bachelor-studiengaenge/mediendesigninformatik-mdi/"
   },
   {
     id: 2,
@@ -50,20 +50,23 @@ const experienceData = [
     title: "Studio B12",
     subtitle: "Unity/Web Developer",
     text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, ad!",
-    link: ""
+    link: "https://studio-b12.de/"
   }
 ]
 
 var firstTimeViewed = false;
+var firstTimeViewedEx = false;
 
 const About = () => {
-  const { ref, inView, entry } = useInView({
+  const [ ref, inView, entry ] = useInView({
     rootMargin: "-250px",
+  });
+  const [ refEx, inViewEx, entryEx ] = useInView({
+    rootMargin: "-150px",
   });
   
   if (inView && !firstTimeViewed) {
     firstTimeViewed = true;
-    console.log("lol")
     
     new Typed(entry.target, {
       strings: ["My skills"],
@@ -74,6 +77,22 @@ const About = () => {
         setTimeout(() => {
           entry.target.classList.remove("typewriter-blink");
           entry.target.classList.add("typewriter-fade-out");
+        }, 2000);
+      }
+    });
+  }
+  if (inViewEx && !firstTimeViewedEx) {
+    firstTimeViewedEx = true;
+    
+    new Typed(entryEx.target, {
+      strings: ["My experience"],
+      startDelay: 500,
+      typeSpeed: 50,
+      showCursor: false,
+      onComplete() {
+        setTimeout(() => {
+          entryEx.target.classList.remove("typewriter-blink");
+          entryEx.target.classList.add("typewriter-fade-out");
         }, 2000);
       }
     });
@@ -105,22 +124,27 @@ const About = () => {
         })
       }
       </div>
+      <div className='container'>
+        <h3 ref={refEx} className='typewriter typewriter-blink small-headline'></h3>
+      </div>
       <div className="experiences__container container">
         {
-          experienceData.map(({id, image, title, subtitle, text}) => {
+          experienceData.map(({id, image, title, subtitle, text, link}) => {
             return (
-              <div key={id} className="experiences__experience">
-                <div className='experiences__header'>
-                  <div className='experiences__item-image-container'>
-                    <img src={image} alt={title} className="projects__item-image"/>
-                  </div>
-                  <div>
-                    <h2>{title}</h2>
-                    <h4 className='text-light'>{subtitle}</h4>
-                  </div>
+              <a key={id} href={link} target="_blank" className='experiences__link'>
+                <div className="experiences__experience">
+                    <div className='experiences__header'>
+                      <div className='experiences__item-image-container'>
+                        <img src={image} alt={title} className="projects__item-image"/>
+                      </div>
+                      <div>
+                          <h2>{title}</h2>
+                          <h4 className='text-light'>{subtitle}</h4>
+                      </div>
+                    </div>
+                  <p className='projects__text'>{text}</p>
                 </div>
-                <p className='projects__text'>{text}</p>
-              </div>
+              </a>
             )
           })
         } 

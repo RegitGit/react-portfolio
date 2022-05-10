@@ -12,7 +12,7 @@
 }
 
 .about__cta > a {
-    text-align: center
+    float: right;
 }
 
 .skills__container {
@@ -46,20 +46,24 @@
 
 .experiences__container {
     display: flex;
-    margin-top: 4rem;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
 .experiences__experience {
-    background: crimson;
+    background: navy;
     width: 28rem;
     min-width: 28rem;
     padding: 1.5rem;
     border-radius: 2rem;
     height: 18rem;
-    margin-top: 2rem;
+    
+    transition: var(--transition);
+}
+
+.experiences__experience:hover {
+    background: var(--color-bg-variant);
 }
 
 .experiences__item-image-container {
@@ -72,4 +76,9 @@
 
 .experiences__header {
     display: flex;
+}
+
+.experiences__link {
+    margin-top: 1.5rem;
+    color: var(--color-primary);
 }

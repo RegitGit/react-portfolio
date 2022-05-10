@@ -83,7 +83,7 @@ section > h2 {
 }
 
 a {
-    color: brown; /*var(--color-primary); */
+    color: var(--color-primary);
     transition: var(--transition);
 }
 
@@ -121,6 +121,7 @@ img {
 
 .small-headline {
     margin-bottom: 0.8rem;
+    margin-top: 1.8rem;
 }
 
 .typewriter::after {
