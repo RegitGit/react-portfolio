@@ -1,58 +1,12 @@
 import React from 'react'
 import "./about.css"
-import MY_IMAGE from "../../assets/imgs/anon.png"
-import CV from "../../assets/pdfs/test_corona.pdf"
+import MY_IMAGE from "./anon.png"
+import CV from "./test_corona.pdf"
 import { useInView } from 'react-intersection-observer'
-import IMG1 from "../../assets/imgs/IMG1.jpg"
-import IMG2 from "../../assets/imgs/IMG2.jpg"
 import Typed from 'typed.js'
+import skillsData from "./skillsData.json"
+import experienceData from "./experienceData.json"
 
-const skillsData = [
-  {
-    id: 0,
-    name: "JavaScript",
-    percentage: 75
-  },
-  {
-    id: 1,
-    name: "HTML",
-    percentage: 65
-  },
-  {
-    id: 2,
-    name: "CSS",
-    percentage: 30
-  },
-  {
-    id: 3,
-    name: "C#",
-    percentage: 90
-  },
-  {
-    id: 4,
-    name: "Unity",
-    percentage: 90
-  }
-]
-
-const experienceData = [
-  {
-    id: 1,
-    image: IMG1,
-    title: "HS Hannover",
-    subtitle: "Mediendesigninformatik B.Sc.",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sapiente deleniti tempora cumque saepe vel.",
-    link: "https://f4.hs-hannover.de/studium/bachelor-studiengaenge/mediendesigninformatik-mdi/"
-  },
-  {
-    id: 2,
-    image: IMG2,
-    title: "Studio B12",
-    subtitle: "Unity/Web Developer",
-    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, ad!",
-    link: "https://studio-b12.de/"
-  }
-]
 
 var firstTimeViewed = false;
 var firstTimeViewedEx = false;
@@ -60,13 +14,13 @@ var firstTimeViewedSkills = false;
 
 const About = () => {
   const [ ref, inView, entry ] = useInView({
-    rootMargin: "-250px",
+    rootMargin: "-100px",
   });
   const [ refEx, inViewEx, entryEx ] = useInView({
     rootMargin: "-150px",
   });
   const [ refSkills, inViewSkills, entrySkills ] = useInView({
-    rootMargin: "-150px",
+    rootMargin: "-20px",
   });
   
   if (inView && !firstTimeViewed) {

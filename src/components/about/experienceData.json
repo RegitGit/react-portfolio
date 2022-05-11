@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "image": "assets/imgs/IMG1.jpg",
+    "title": "HS Hannover",
+    "subtitle": "Mediendesigninformatik B.Sc.",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sapiente deleniti tempora cumque saepe vel.",
+    "link": "https://f4.hs-hannover.de/studium/bachelor-studiengaenge/mediendesigninformatik-mdi/"
+  },
+  {
+    "id": 2,
+    "image": "assets/imgs/IMG2.jpg",
+    "title": "Studio B12",
+    "subtitle": "Unity/Web Developer",
+    "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, ad!",
+    "link": "https://studio-b12.de/"
+  }
+]

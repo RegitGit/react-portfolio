@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "image": "assets/imgs/IMG1.jpg",
+      "title": "Title",
+      "explanation": "Test",
+      "tags": ["JS", "CSS"],
+      "demo": "link"
+    },
+    {
+      "id": 2,
+      "image": "assets/imgs/IMG2.jpg",
+      "title": "Title2",
+      "explanation": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos cupiditate doloremque ipsam est aperiam ab vitae ullam itaque praesentium? Consequatur.",
+      "tags": ["Arduino", "Android Studio"],
+      "demo": "link"
+    },
+    {
+      "id": 3,
+      "image": "assets/imgs/IMG3.jpg",
+      "title": "Title3",
+      "explanation": "Test",
+      "tags": ["JS", "HTML"],
+      "demo": "link"
+    }
+]
