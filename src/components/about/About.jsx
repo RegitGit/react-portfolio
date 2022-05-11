@@ -56,12 +56,16 @@ const experienceData = [
 
 var firstTimeViewed = false;
 var firstTimeViewedEx = false;
+var firstTimeViewedSkills = false;
 
 const About = () => {
   const [ ref, inView, entry ] = useInView({
     rootMargin: "-250px",
   });
   const [ refEx, inViewEx, entryEx ] = useInView({
+    rootMargin: "-150px",
+  });
+  const [ refSkills, inViewSkills, entrySkills ] = useInView({
     rootMargin: "-150px",
   });
   
@@ -98,6 +102,17 @@ const About = () => {
     });
   }
 
+  if (inViewSkills && !firstTimeViewedSkills) {
+    firstTimeViewedSkills = true;
+    
+    let children = entrySkills.target.children;
+    for (let i = 0; i < children.length; i++) {
+      const child = children[i];
+      const bg = child.querySelector(".skills__barFG");
+      bg.style.width = "100%";      
+    }
+  }
+
   return (
     <section id='about'>
       <div className="image__container">
@@ -106,19 +121,26 @@ const About = () => {
           <a href={CV} download>Download CV</a>
         </div>
       </div>
+      <div className="about__aboutMeTextContainer">
+        <p className='about__aboutMeText'>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, temporibus odit eveniet aliquid sit numquam, cum libero soluta corrupti, quia qui quae velit atque. Explicabo dignissimos facilis consequatur officia porro cum odio impedit ipsam praesentium. Fuga corporis quidem labore molestias quae enim voluptate repellendus ipsum et officiis? Nobis, suscipit iusto!
+        </p>
+      </div>
       <div className='container'>
         <h3 ref={ref} className='typewriter typewriter-blink small-headline'></h3>
       </div>
-      <div className="skills__container container">
+      <div ref={refSkills} className="skills__container container">
       {
         skillsData.map(({id, name, percentage}) => {
           return (
             <div key={id} className="skills__skill">
                 <h3>{name}</h3>
-                <svg xmlns="http://www.w3.org/2000/svg" className='skills__fullBar'>
-                  <rect width={"180"} height={"10"} style={{fill:"rgb(0,0,111)"}}/>
-                  <rect width={percentage + "%"} height={"10"} style={{fill:"rgb(0,0,255)"}}/>
-                </svg>
+                <div className="skills__barContainer">
+                  <div className="skills__barBG"></div>
+                  <div className="skills_barFGContainer" style={{width:percentage + "%"}}>
+                    <div className="skills__barFG"></div>
+                  </div>
+                </div>
             </div>
           )
         })
