@@ -31,13 +31,14 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 1rem;
 }
 
 .skills__skill {
     display: flex;
     align-items: center;
     width: max-content;
-    margin-top: 1rem;
+    
     padding: 0.7rem;
     border-radius: 1rem 1rem;
     background: var(--color-bg-variant);
@@ -93,16 +94,17 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    gap: 2rem;
+    
 }
 
 .experiences__experience {
     background: navy;
     width: 28rem;
+    height: 18rem;
     min-width: 28rem;
     padding: 1.5rem;
     border-radius: 2rem;
-    height: 18rem;
-    
     transition: var(--transition);
 }
 
@@ -123,6 +125,5 @@
 }
 
 .experiences__link {
-    margin-top: 1.5rem;
     color: var(--color-primary);
 }

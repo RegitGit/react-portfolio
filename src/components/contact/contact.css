@@ -3,6 +3,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    gap: 1.2rem;
 }
 
 .contact__option {
@@ -12,7 +13,7 @@
     text-align: center;
     border: 1px solid transparent;
     transition: var(--transition);
-    margin-top: 1.2rem;
+    
 }
 
 .contact__option:hover {
