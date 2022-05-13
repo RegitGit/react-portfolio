@@ -17,7 +17,7 @@ const Projects = () => {
     
     new Typed(entry.target, {
       strings: ["My recent work"],
-      startDelay: 500,
+      startDelay: 100,
       typeSpeed: 50,
       showCursor: false,
       onComplete() {

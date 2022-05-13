@@ -1,9 +1,60 @@
 import React from 'react'
+import { useInView } from 'react-intersection-observer';
+import Typed from 'typed.js';
 import "./contact.css"
+import { AiOutlineMail, AiOutlineWhatsApp } from 'react-icons/ai'
+
+
+var firstTimeViewed = false;
 
 const Contact = () => {
+  const { ref, inView, entry } = useInView({
+    rootMargin: "-150px",
+  });
+
+  if (inView && !firstTimeViewed) {
+    firstTimeViewed = true;
+    
+    new Typed(entry.target, {
+      strings: ["My contact info"],
+      startDelay: 100,
+      typeSpeed: 50,
+      showCursor: false,
+      onComplete() {
+        setTimeout(() => {
+          entry.target.classList.remove("typewriter-blink");
+          entry.target.classList.add("typewriter-fade-out");
+        }, 2000);
+      }
+    });
+  }
+
   return (
-    <section id='contact'>Contact</section>
+    <div>
+      <div className="svg__flex">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280"><path fill="#0099ff" fillOpacity="1" d="M0,218L1440,270L1440,320L0,320Z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280"><path fill="#0099ff" fillOpacity="1" d="M0,224L1440,160L1440,0L0,0Z"></path></svg>
+      </div>
+      <section id='contact'>
+        <div className='container'>
+          <h3 ref={ref} className='typewriter typewriter-blink small-headline'></h3>
+        </div>
+        <div className="container contact__options">
+          <article className='contact__option'>
+            <AiOutlineMail/>
+            <h4>Email</h4>
+            <h5>steffenthom96@gmail.com</h5>
+            <a href='mailto:steffenthom96@gmail.com'>Send a mail</a>
+          </article>
+          <article className='contact__option'>
+            <AiOutlineWhatsApp/>
+            <h4>WhatsApp</h4>
+            <h5>+49 1573 8686393</h5>
+            <a href='https://api.whatsapp.com/send?phone=+4915738686393'>Send a message</a>
+          </article>
+        </div>
+      </section>
+    </div>
   )
 }
 

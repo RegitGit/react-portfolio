@@ -28,7 +28,7 @@ const About = () => {
     
     new Typed(entry.target, {
       strings: ["My skills"],
-      startDelay: 500,
+      startDelay: 100,
       typeSpeed: 50,
       showCursor: false,
       onComplete() {
@@ -44,7 +44,7 @@ const About = () => {
     
     new Typed(entryEx.target, {
       strings: ["My experience"],
-      startDelay: 500,
+      startDelay: 100,
       typeSpeed: 50,
       showCursor: false,
       onComplete() {
