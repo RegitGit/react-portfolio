@@ -12,7 +12,7 @@
       "image": "assets/imgs/IMG2.jpg",
       "title": "Title2",
       "explanation": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos cupiditate doloremque ipsam est aperiam ab vitae ullam itaque praesentium? Consequatur.",
-      "tags": ["Arduino", "Android Studio"],
+      "tags": ["Arduino", "Android Studio", "Databases"],
       "demo": "link"
     },
     {
