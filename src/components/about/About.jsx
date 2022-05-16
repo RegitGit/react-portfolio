@@ -103,27 +103,36 @@ const About = () => {
       <div className='container'>
         <h3 ref={refEx} className='typewriter typewriter-blink small-headline'></h3>
       </div>
-      <div className="experiences__container container">
-        {
-          experienceData.map(({id, image, title, subtitle, text, link}) => {
-            return (
-              <a key={id} href={link} target="_blank" className='experiences__link'>
-                <div className="experiences__experience">
-                    <div className='experiences__header'>
-                      <div className='experiences__item-image-container'>
-                        <img src={image} alt={title} className="projects__item-image"/>
-                      </div>
-                      <div>
-                          <h2>{title}</h2>
-                          <h4 className='text-light'>{subtitle}</h4>
-                      </div>
+      <div className="experience__timelineContainer container">
+        <div className="experience__timelineBox"></div>
+        <div className="experiences__container">
+          {
+            experienceData.map(({id, image, title, subtitle, dateStart, dateEnd, text, link}) => {
+              return (
+                <div key={id}>
+                  <h2 className='experience__date'>{dateEnd}</h2>
+                  <a href={link} target="_blank" className='experiences__link'>
+                    <div className="experiences__experience">
+                        <div className='experiences__header'>
+                          <div className='experiences__item-image-container'>
+                            <img src={image} alt={title} className="projects__item-image"/>
+                          </div>
+                          <div>
+                              <h2>{title}</h2>
+                              <h4 className='text-light'>{subtitle}</h4>
+                          </div>
+                          
+                        </div>
+                      <p className='projects__text'>{text}</p>
                     </div>
-                  <p className='projects__text'>{text}</p>
+                  </a>
+                  <h2 className='experience__date'>{dateStart}</h2>
                 </div>
-              </a>
-            )
-          })
-        } 
+              )
+            })
+          } 
+        </div>
+        
       </div>
     </section>
   )
