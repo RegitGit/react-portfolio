@@ -5,13 +5,13 @@
 .projects__container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 2rem;
 }
 
 .projects__article {
-    width: 40rem;
-    min-width: 40rem;
+    width: 42rem;
+    min-width: 42rem;
     min-height: 24rem;
     padding: 1.2rem;
     border-radius: 2rem;

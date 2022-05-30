@@ -22,6 +22,17 @@ const About = () => {
   const [ refSkills, inViewSkills, entrySkills ] = useInView({
     rootMargin: "-20px",
   });
+
+  const [ refAbout, inViewAbout, entryAbout ] = useInView({
+    rootMargin: "-50px",
+  });
+
+  if (inViewAbout) {
+    document.getElementById("nav-home").classList.remove("active")
+    document.getElementById("nav-about").classList.add("active")
+    document.getElementById("nav-projects").classList.remove("active")
+    document.getElementById("nav-contact").classList.remove("active")
+  }
   
   if (inView && !firstTimeViewed) {
     firstTimeViewed = true;
@@ -69,7 +80,9 @@ const About = () => {
 
   return (
     <section id='about'>
-      <div className="image__container">
+      
+    
+      <div ref={refAbout} className="image__container">
         <img src={MY_IMAGE} alt="It's me" />
         <div className='about__cta'>
           <a href={CV} download>Download CV</a>
