@@ -96,8 +96,14 @@
 
 .experience__timelineBox {
     width: 0.3rem;
+}
+
+#experience__timelineBox-bg {
+    width: 100%;
+    height: 0%;
     background: white;
     border-radius: 1rem;
+    transition: height 2200ms ease-in-out;
 }
 
 .experiences__container {

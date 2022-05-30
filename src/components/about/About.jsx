@@ -52,6 +52,7 @@ const About = () => {
   }
   if (inViewEx && !firstTimeViewedEx) {
     firstTimeViewedEx = true;
+    document.getElementById("experience__timelineBox-bg").style.height = "100%";
     
     new Typed(entryEx.target, {
       strings: ["My experience"],
@@ -117,7 +118,9 @@ const About = () => {
         <h3 ref={refEx} className='typewriter typewriter-blink small-headline'></h3>
       </div>
       <div className="experience__timelineContainer container">
-        <div className="experience__timelineBox"></div>
+        <div className="experience__timelineBox">
+          <div id="experience__timelineBox-bg"></div>
+        </div>
         <div className="experiences__container">
           {
             experienceData.map(({id, image, title, subtitle, dateStart, dateEnd, text, link}) => {
