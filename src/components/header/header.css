@@ -3,10 +3,13 @@ header {
 }
 
 .header__container {
+    position: relative;
+    pointer-events: none;
+    z-index: 2;
     text-align: left;
-    height: 314.39px;
+    height: 160px;
     vertical-align: middle;
-    padding-top: 6rem;
+    margin-top: 6rem;
     /* position: relative; */
 }
 
@@ -16,18 +19,13 @@ header > svg {
 }
 
 .header__socials {
+    position: relative;
+    z-index: 2;
     float: right;
     margin-right: 3rem;
     margin-top: 2rem;
 }
 
-#renderCanvas {
-    width: 100vw;
-    /* aspect-ratio: 16 / 9; */
-    height: 60vh;
-    touch-action: none;
-    outline: none;
-}
 
 @keyframes blink {
     0% {

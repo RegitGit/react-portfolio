@@ -81,7 +81,6 @@ const About = () => {
 
   return (
     <section id='about'>
-      
     
       <div ref={refAbout} className="image__container">
         <img src={MY_IMAGE} alt="It's me" />
