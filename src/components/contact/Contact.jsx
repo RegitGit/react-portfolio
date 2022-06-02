@@ -8,9 +8,20 @@ import { AiOutlineMail, AiOutlineWhatsApp } from 'react-icons/ai'
 var firstTimeViewed = false;
 
 const Contact = () => {
-  const { ref, inView, entry } = useInView({
+  const [ ref, inView, entry ] = useInView({
     rootMargin: "-150px",
   });
+
+  const [ refContact, inViewContact, entryContact ] = useInView({
+    threshold: 0.9,
+  });
+
+  if (inViewContact) {
+    document.getElementById("nav-home").classList.remove("active")
+    document.getElementById("nav-about").classList.remove("active")
+    document.getElementById("nav-projects").classList.remove("active")
+    document.getElementById("nav-contact").classList.add("active")
+  }
 
   if (inView && !firstTimeViewed) {
     firstTimeViewed = true;
@@ -35,7 +46,7 @@ const Contact = () => {
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280"><path fill="#0099ff" fillOpacity="1" d="M0,218L1440,270L1440,320L0,320Z"></path></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280"><path fill="#0099ff" fillOpacity="1" d="M0,224L1440,160L1440,0L0,0Z"></path></svg>
       </div>
-      <section id='contact'>
+      <section ref={refContact} id='contact'>
         <div className='container'>
           <h3 ref={ref} className='typewriter typewriter-blink small-headline'></h3>
         </div>

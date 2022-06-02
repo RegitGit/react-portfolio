@@ -7,14 +7,13 @@ import {GoFileCode} from 'react-icons/go'
 import { useState } from 'react'
 
 const Navbar = () => {
-  const [activeNav, setActiveNav] = useState("#");
 
   return (
     <nav>
-      <a id='nav-home' href='#' onClick={() => setActiveNav("#")} className={activeNav === "#" ? "active" : ""}><AiOutlineHome/></a>
-      <a id='nav-about' href='#about' onClick={() => setActiveNav("#about")} className={activeNav === "#about" ? "active" : ""}><FiUser/></a>
-      <a id='nav-projects' href='#projects' onClick={() => setActiveNav("#projects")} className={activeNav === "#projects" ? "active" : ""}><GoFileCode/></a>
-      <a id='nav-contact' href='#contact' onClick={() => setActiveNav("#contact")} className={activeNav === "#contact" ? "active" : ""}><AiOutlineMail/></a>
+      <a id='nav-home' href='#'><AiOutlineHome/></a>
+      <a id='nav-about' href='#about'><FiUser/></a>
+      <a id='nav-projects' href='#projects'><GoFileCode/></a>
+      <a id='nav-contact' href='#contact'><AiOutlineMail/></a>
     </nav>
   )
 }

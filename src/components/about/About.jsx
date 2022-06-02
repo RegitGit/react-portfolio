@@ -7,7 +7,6 @@ import Typed from 'typed.js'
 import skillsData from "./skillsData.json"
 import experienceData from "./experienceData.json"
 
-
 var firstTimeViewed = false;
 var firstTimeViewedEx = false;
 var firstTimeViewedSkills = false;
@@ -24,7 +23,7 @@ const About = () => {
   });
 
   const [ refAbout, inViewAbout, entryAbout ] = useInView({
-    rootMargin: "-50px",
+    threshold: 0.6,
   });
 
   if (inViewAbout) {
@@ -80,9 +79,9 @@ const About = () => {
   }
 
   return (
-    <section id='about'>
+    <section ref={refAbout} id='about'>
     
-      <div ref={refAbout} className="image__container">
+      <div className="image__container">
         <img src={MY_IMAGE} alt="It's me" />
         <div className='about__cta'>
           <a href={CV} download>Download CV</a>

@@ -2,8 +2,20 @@ import React, { useEffect, useRef } from 'react'
 import "./header.css"
 import Typed from 'typed.js'
 import HeaderSocials from "./headerSocials"
+import { useInView } from 'react-intersection-observer'
 
 const Header = () => {
+
+  const [ refHome, inViewHome, entryHome ] = useInView({
+    rootMargin: "-50px",
+  });
+
+  if (inViewHome) {
+    document.getElementById("nav-home").classList.add("active")
+    document.getElementById("nav-about").classList.remove("active")
+    document.getElementById("nav-projects").classList.remove("active")
+    document.getElementById("nav-contact").classList.remove("active")
+  }
 
   const el = useRef(null);
   const el2 = useRef(null);
@@ -51,7 +63,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header>     
+    <header ref={refHome}>     
       <canvas id="renderCanvas"></canvas>
       {/* <svg style={{width:"100vw"}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fillOpacity="1" d="M0,50L1440,196L1440,0L0,0Z"></path></svg> */}
       <HeaderSocials/>
