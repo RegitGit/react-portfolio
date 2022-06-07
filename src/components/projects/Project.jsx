@@ -10,7 +10,7 @@ const Project = () => {
   return (
     <div>
         <div className='container project__container'>
-            <div className='project__text-container'>
+            <div className='project__container-container'>
                 <ul className='projects__texts'>
                     {
                         content.texts.map((value, i) => {
