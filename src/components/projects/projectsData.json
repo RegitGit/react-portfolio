@@ -5,7 +5,18 @@
       "title": "Title",
       "explanation": "Test",
       "tags": ["JS", "CSS"],
-      "demo": "link"
+      "content": {
+        "texts": [
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quis quas iste quisquam vel reprehenderit quam fugiat ea aliquam? Numquam, voluptatibus accusantium aliquam mollitia possimus odio atque nostrum rerum consequatur!",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quis quas iste quisquam vel reprehenderit quam fugiat ea aliquam?",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quis quas iste quisquam vel reprehenderit quam fugiat ea aliquam? Numquam, voluptatibus accusantium!"
+        ],
+        "images": [
+          "assets/imgs/IMG1.jpg",
+          "assets/imgs/IMG2.jpg",
+          "assets/imgs/IMG3.jpg"
+        ]
+      }
     },
     {
       "id": 2,
@@ -13,7 +24,18 @@
       "title": "Title2",
       "explanation": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos cupiditate doloremque ipsam est aperiam ab vitae ullam itaque praesentium? Consequatur.",
       "tags": ["Arduino", "Android Studio", "Databases"],
-      "demo": "link"
+      "content": {
+        "texts": [
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quis quas iste quisquam vel reprehenderit quam fugiat ea aliquam? Numquam, voluptatibus accusantium aliquam mollitia possimus odio atque nostrum rerum consequatur!",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quis quas iste quisquam vel reprehenderit quam fugiat ea aliquam?",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quis quas iste quisquam vel reprehenderit quam fugiat ea aliquam? Numquam, voluptatibus accusantium!"
+        ],
+        "images": [
+          "assets/imgs/IMG1.jpg",
+          "assets/imgs/IMG2.jpg",
+          "assets/imgs/IMG3.jpg"
+        ]
+      }
     },
     {
       "id": 3,
@@ -21,6 +43,17 @@
       "title": "Title3",
       "explanation": "Test",
       "tags": ["JS", "HTML"],
-      "demo": "link"
+      "content": {
+        "texts": [
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quis quas iste quisquam vel reprehenderit quam fugiat ea aliquam? Numquam, voluptatibus accusantium aliquam mollitia possimus odio atque nostrum rerum consequatur!",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quis quas iste quisquam vel reprehenderit quam fugiat ea aliquam?",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quis quas iste quisquam vel reprehenderit quam fugiat ea aliquam? Numquam, voluptatibus accusantium!"
+        ],
+        "images": [
+          "assets/imgs/IMG1.jpg",
+          "assets/imgs/IMG2.jpg",
+          "assets/imgs/IMG3.jpg"
+        ]
+      }
     }
 ]

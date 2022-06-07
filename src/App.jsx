@@ -16,11 +16,11 @@ const App = () => {
         <Header/>
         <About/>
         <Navbar/>
+        <Router>
         <Projects/>
         <Contact/>
         <Footer/>
 
-        <Router>
             <Routes>
               <Route path='/:id' element={<Project/>} />
             </Routes>

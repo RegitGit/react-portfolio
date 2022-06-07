@@ -6,18 +6,46 @@
     width: 100vw;
     height: 100vh;
     z-index: 20;
+    
 }
 
 .project__container {
     background: white;
     opacity: 1;
-    top: 5rem;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     position: absolute;
-    overflow-y: auto;
+
     z-index: 21;
-    height: max-content;
-    min-height: 60vh;
+    height: 80vh;
     border-radius: 2rem;
+}
+
+.project__text-container {
+    overflow-y: scroll;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 93%;
+}
+
+.projects__texts li {
+    margin-bottom: 15rem;
+}
+
+
+.projects__texts li:nth-child(2) .project__image {
+    float: left;
+}
+
+.project__image {
+    float: right;
+    width: 20%;
+    aspect-ratio: 1 / 1;
+}
+
+.project__text {
+    color: black;
+    padding: 0 2rem 0 2rem;
 }

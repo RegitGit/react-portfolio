@@ -4,6 +4,7 @@ import {FiExternalLink} from "react-icons/fi"
 import Typed from 'typed.js'
 import { useInView } from 'react-intersection-observer'
 import projectsData from "./projectsData.json"
+import { Link } from 'react-router-dom'
 
 var firstTimeViewed = false;
 
@@ -93,13 +94,15 @@ const Projects = () => {
       </div>
       <div className='container projects__container'>
         {
-          projectsData.map(({id, image, title, explanation, tags, demo}) => {
+          projectsData.map(({id, image, title, explanation, tags}) => {
             return (
               <article key={id} className="projects__article">
                 <div className="projects__item">
                   <div className='projects__item-cta'>
                     <h3>{title}</h3>
-                    <a href={demo} className="btn btn-primary projects__item-link" target="_blank"><FiExternalLink size={24}/></a>
+                    <Link to={"/" + id}>
+                      <button className="btn btn-primary projects__item-link"><FiExternalLink size={24}/></button>
+                    </Link>
                     <div className='projects__tags'>
                       <ul>
                         {

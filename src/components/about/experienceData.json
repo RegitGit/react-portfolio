@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": 0,
     "image": "assets/imgs/IMG2.jpg",
     "title": "Studio B12",
     "subtitle": "Unity/Web Developer",
@@ -10,7 +10,7 @@
     "link": "https://studio-b12.de/"
   },
   {
-    "id": 2,
+    "id": 1,
     "image": "assets/imgs/IMG1.jpg",
     "title": "HS Hannover",
     "subtitle": "Mediendesigninformatik B.Sc.",
