@@ -4,7 +4,6 @@ import {AiOutlineHome} from 'react-icons/ai'
 import {FiUser} from 'react-icons/fi'
 import {AiOutlineMail} from 'react-icons/ai'
 import {GoFileCode} from 'react-icons/go'
-import { useState } from 'react'
 
 const Navbar = () => {
 

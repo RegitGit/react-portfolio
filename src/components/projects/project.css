@@ -1,0 +1,23 @@
+.project__overlay {
+    position: fixed;
+    top: 0;
+    background: black;
+    opacity: 0.3;
+    width: 100vw;
+    height: 100vh;
+    z-index: 20;
+}
+
+.project__container {
+    background: white;
+    opacity: 1;
+    top: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    overflow-y: auto;
+    z-index: 21;
+    height: max-content;
+    min-height: 60vh;
+    border-radius: 2rem;
+}
