@@ -13,7 +13,7 @@ const Project = () => {
     <div>
         <div className='container project__container'>
             <div className='project__container-container'>
-                <ul className='projects__texts'>
+                <div className='projects__texts'>
                     <p className='project__text'>{content.text}</p>
                     <div className='project__image-container'>
                     {
@@ -24,7 +24,7 @@ const Project = () => {
                             })
                     }
                     </div>
-                </ul>
+                </div>
             </div>   
         </div>
         <Link to="/">

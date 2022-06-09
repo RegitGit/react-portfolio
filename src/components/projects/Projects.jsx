@@ -124,15 +124,16 @@ const Projects = () => {
                 <div className="projects__item">
                   <div className='projects__item-cta'>
                     <h3>{title}</h3>
+                        <RiSearchEyeLine className='projects__view-img' size={38}/>
                     <div className='projects__tags'>
                       <ul>
                         {
                           tags.map((tag, index) => {
                             return (
                               <li key={index} onClick={(e) => { tagClick(e, tag) }} className={"projects__tag projects__" + tag.replace(/ /g, "_")}>{tag}</li>
-                            )
-                          })
-                        }
+                              )
+                            })
+                          }
                       </ul>
                     </div>
                   </div>
@@ -142,6 +143,7 @@ const Projects = () => {
                 </div>
 
                 <p className='projects__text'>{explanation}</p>
+
               </article>
               </Link>
             )

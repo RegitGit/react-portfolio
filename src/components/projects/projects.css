@@ -10,6 +10,7 @@
 }
 
 .projects__article {
+    position: relative;
     width: 42rem;
     min-width: 42rem;
     min-height: 341.13px;
@@ -23,6 +24,19 @@
 .projects__article:hover {
     background-color: transparent;
     border-color: var(--color-primary);
+}
+
+.projects__article:hover .projects__view-img {
+    color: var(--color-primary);
+}
+
+.projects__view-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-bg-variant);
+    transition: var(--transition);
 }
 
 .projects__item-image-container {
@@ -57,6 +71,7 @@
 .projects__tag {
     width: max-content;
     display: inline-block;
+    position: relative;
     margin-right: 0.2rem;
     margin-top: 0.3rem;
     color:grey;
@@ -65,7 +80,6 @@
     padding: 0.5rem 1rem;
     border-radius: 6rem;
     cursor: pointer;
-    border: 1px solid black;
     transition: var(--transition);
 }
 
