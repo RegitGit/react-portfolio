@@ -119,8 +119,8 @@ const Projects = () => {
         {
           projectsData.map(({id, image, title, explanation, tags}) => {
             return (
+              <Link to={"/" + id}>
               <article key={id} className="projects__article">
-                <Link to={"/" + id}>
                 <div className="projects__item">
                   <div className='projects__item-cta'>
                     <h3>{title}</h3>
@@ -140,10 +140,10 @@ const Projects = () => {
                     <img src={image} alt={title} className="projects__item-image"/>
                   </div>
                 </div>
-                </Link>
 
                 <p className='projects__text'>{explanation}</p>
               </article>
+              </Link>
             )
           })
         }

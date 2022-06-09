@@ -1,16 +1,28 @@
 [
     {
-      "id": 1,
+      "id": 0,
       "image": "assets/imgs/IMG1.jpg",
       "title": "Title",
       "explanation": "Test",
       "tags": ["JS", "CSS"],
       "content": {
-        "texts": [
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quis quas iste quisquam vel reprehenderit quam fugiat ea aliquam? Numquam, voluptatibus accusantium aliquam mollitia possimus odio atque nostrum rerum consequatur!",
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quis quas iste quisquam vel reprehenderit quam fugiat ea aliquam?",
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quis quas iste quisquam vel reprehenderit quam fugiat ea aliquam? Numquam, voluptatibus accusantium!"
-        ],
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quis quas iste quisquam vel reprehenderit quam fugiat ea aliquam? Numquam, voluptatibus accusantium aliquam mollitia possimus odio atque nostrum rerum consequatur!\nVoluptate quis quas iste quisquam vel reprehenderit quam fugiat ea aliquam?",
+        "images": [
+          "assets/imgs/IMG1.jpg",
+          "assets/imgs/IMG2.jpg",
+          "assets/imgs/IMG3.jpg",
+          "assets/imgs/IMG3.jpg"
+        ]
+      }
+    },
+    {
+      "id": 1,
+      "image": "assets/imgs/IMG2.jpg",
+      "title": "Title2",
+      "explanation": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos cupiditate doloremque ipsam est aperiam ab vitae ullam itaque praesentium? Consequatur.",
+      "tags": ["Arduino", "Android Studio", "Databases"],
+      "content": {
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quis quas iste quisquam vel reprehenderit quam fugiat ea aliquam? Numquam, voluptatibus accusantium aliquam mollitia possimus odio atque nostrum rerum consequatur!",
         "images": [
           "assets/imgs/IMG1.jpg",
           "assets/imgs/IMG2.jpg",
@@ -20,35 +32,12 @@
     },
     {
       "id": 2,
-      "image": "assets/imgs/IMG2.jpg",
-      "title": "Title2",
-      "explanation": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos cupiditate doloremque ipsam est aperiam ab vitae ullam itaque praesentium? Consequatur.",
-      "tags": ["Arduino", "Android Studio", "Databases"],
-      "content": {
-        "texts": [
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quis quas iste quisquam vel reprehenderit quam fugiat ea aliquam? Numquam, voluptatibus accusantium aliquam mollitia possimus odio atque nostrum rerum consequatur!",
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quis quas iste quisquam vel reprehenderit quam fugiat ea aliquam?",
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quis quas iste quisquam vel reprehenderit quam fugiat ea aliquam? Numquam, voluptatibus accusantium!"
-        ],
-        "images": [
-          "assets/imgs/IMG1.jpg",
-          "assets/imgs/IMG2.jpg",
-          "assets/imgs/IMG3.jpg"
-        ]
-      }
-    },
-    {
-      "id": 3,
       "image": "assets/imgs/IMG3.jpg",
       "title": "Title3",
       "explanation": "Test",
       "tags": ["JS", "HTML"],
       "content": {
-        "texts": [
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quis quas iste quisquam vel reprehenderit quam fugiat ea aliquam? Numquam, voluptatibus accusantium aliquam mollitia possimus odio atque nostrum rerum consequatur!",
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quis quas iste quisquam vel reprehenderit quam fugiat ea aliquam?",
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quis quas iste quisquam vel reprehenderit quam fugiat ea aliquam? Numquam, voluptatibus accusantium!"
-        ],
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quis quas iste quisquam vel reprehenderit quam fugiat ea aliquam? Numquam, voluptatibus accusantium aliquam mollitia possimus odio atque nostrum rerum consequatur!",
         "images": [
           "assets/imgs/IMG1.jpg",
           "assets/imgs/IMG2.jpg",

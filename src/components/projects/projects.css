@@ -12,6 +12,7 @@
 .projects__article {
     width: 42rem;
     min-width: 42rem;
+    min-height: 341.13px;
     padding: 1.2rem;
     border-radius: 2rem;
     border: 1px solid transparent;

@@ -14,16 +14,16 @@ const Project = () => {
         <div className='container project__container'>
             <div className='project__container-container'>
                 <ul className='projects__texts'>
+                    <p className='project__text'>{content.text}</p>
+                    <div className='project__image-container'>
                     {
-                        content.texts.map((value, i) => {
+                        content.images.map((value, i) => {
                             return (
-                                <li key={i}>
-                                    <img className='project__image' src={content.images[i]} alt=""></img>
-                                    <p className='project__text'>{value}</p>
-                                </li>
+                                <img key={i} className='project__image' src={value} alt=""></img>       
                                 )
-                        })
+                            })
                     }
+                    </div>
                 </ul>
             </div>   
         </div>
