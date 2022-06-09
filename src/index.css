@@ -83,12 +83,8 @@ section > h2 {
 }
 
 a {
-    color: var(--color-primary);
+    color: var(--color-white);
     transition: var(--transition);
-}
-
-a:hover {
-    color: var(--color-white)
 }
 
 .btn {

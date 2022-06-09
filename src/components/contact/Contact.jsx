@@ -51,18 +51,22 @@ const Contact = () => {
           <h3 ref={ref} className='typewriter typewriter-blink small-headline'></h3>
         </div>
         <div className="container contact__options">
-          <article className='contact__option'>
-            <AiOutlineMail/>
-            <h4>Email</h4>
-            <h5>steffenthom96@gmail.com</h5>
-            <a href='mailto:steffenthom96@gmail.com'>Send a mail</a>
-          </article>
-          <article className='contact__option'>
-            <AiOutlineWhatsApp/>
-            <h4>WhatsApp</h4>
-            <h5>+49 1573 8686393</h5>
-            <a href='https://api.whatsapp.com/send?phone=+4915738686393'>Send a message</a>
-          </article>
+          <a href='mailto:steffenthom96@gmail.com'>
+            <article className='contact__option'>
+              <AiOutlineMail/>
+              <h4>Email</h4>
+              <h5>steffenthom96@gmail.com</h5>
+              <p className='contact__option-text'>Send a mail</p>
+            </article>
+          </a>
+          <a href='https://api.whatsapp.com/send?phone=+4915738686393'>
+            <article className='contact__option'>
+              <AiOutlineWhatsApp/>
+              <h4>WhatsApp</h4>
+              <h5>+49 1573 8686393</h5>
+              <p className='contact__option-text'>Send a message</p>
+            </article>
+          </a>
         </div>
       </section>
     </div>

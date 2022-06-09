@@ -80,17 +80,15 @@ const About = () => {
 
   return (
     <section ref={refAbout} id='about'>
-    
+      
       <div className="image__container">
         <img src={MY_IMAGE} alt="It's me" />
-        <div className='about__cta'>
-          <a href={CV} download>Download CV</a>
-        </div>
       </div>
       <div className="about__aboutMeTextContainer">
         <p className='about__aboutMeText'>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, temporibus odit eveniet aliquid sit numquam, cum libero soluta corrupti, quia qui quae velit atque. Explicabo dignissimos facilis consequatur officia porro cum odio impedit ipsam praesentium. Fuga corporis quidem labore molestias quae enim voluptate repellendus ipsum et officiis? Nobis, suscipit iusto!
         </p>
+        <a href={CV} className='about__cta' download>Download CV</a>
       </div>
       <div className='container'>
         <h3 ref={ref} className='typewriter typewriter-blink small-headline'></h3>
