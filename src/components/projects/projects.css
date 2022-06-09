@@ -12,7 +12,6 @@
 .projects__article {
     width: 42rem;
     min-width: 42rem;
-    min-height: 24rem;
     padding: 1.2rem;
     border-radius: 2rem;
     border: 1px solid transparent;
@@ -70,8 +69,8 @@
 }
 
 .projects__item-link {
-    display:flex;
-    margin-top: 0.7rem;
+    float: right;
+    margin-left: 0.7rem;
     padding: 0.8rem;
 }
 

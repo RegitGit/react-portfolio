@@ -4,9 +4,11 @@ import "./project.css"
 import projectsData from "./projectsData.json"
 
 const Project = () => {
+    
+
     const {id} = useParams();
     const content = projectsData[id].content;
-    console.log(content)
+    
   return (
     <div>
         <div className='container project__container'>

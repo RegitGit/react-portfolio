@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./projects.css"
-import {FiExternalLink} from "react-icons/fi"
+import {RiSearchEyeLine} from "react-icons/ri"
 import Typed from 'typed.js'
 import { useInView } from 'react-intersection-observer'
 import projectsData from "./projectsData.json"
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 var firstTimeViewed = false;
 
@@ -82,6 +82,29 @@ const Projects = () => {
     currentTag = activeTag;
   }
 
+  function tagClick(e, tag) {
+    e.preventDefault();
+    hideProjects("projects__" + tag.replace(/ /g, "_"), e.target)
+  }
+
+  function disableScrolling() {
+    document.body.classList.add("disable-scrolling")
+  }
+  function enableScrolling() {
+    document.body.classList.remove("disable-scrolling")
+  }
+
+  const location = useLocation();
+
+    useEffect(() => {
+      if (location.pathname === "/") {
+        enableScrolling();
+      }
+      else {
+        disableScrolling();
+      }
+    }, [location]);
+
   return (
     <div>
       <div className="svg__flex">
@@ -97,18 +120,16 @@ const Projects = () => {
           projectsData.map(({id, image, title, explanation, tags}) => {
             return (
               <article key={id} className="projects__article">
+                <Link to={"/" + id}>
                 <div className="projects__item">
                   <div className='projects__item-cta'>
                     <h3>{title}</h3>
-                    <Link to={"/" + id}>
-                      <button className="btn btn-primary projects__item-link"><FiExternalLink size={24}/></button>
-                    </Link>
                     <div className='projects__tags'>
                       <ul>
                         {
                           tags.map((tag, index) => {
                             return (
-                              <li key={index} onClick={(e) => hideProjects("projects__" + tag.replace(/ /g, "_"), e.target)} className={"projects__tag projects__" + tag.replace(/ /g, "_")}>{tag}</li>
+                              <li key={index} onClick={(e) => { tagClick(e, tag) }} className={"projects__tag projects__" + tag.replace(/ /g, "_")}>{tag}</li>
                             )
                           })
                         }
@@ -119,6 +140,8 @@ const Projects = () => {
                     <img src={image} alt={title} className="projects__item-image"/>
                   </div>
                 </div>
+                </Link>
+
                 <p className='projects__text'>{explanation}</p>
               </article>
             )

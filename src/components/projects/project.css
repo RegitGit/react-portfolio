@@ -15,7 +15,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    position: absolute;
+    position: fixed;
 
     z-index: 21;
     height: 80vh;
@@ -49,4 +49,8 @@
 
 .project__text {
     color: black;
+}
+
+.disable-scrolling {
+    overflow: hidden;
 }
