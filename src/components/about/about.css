@@ -119,16 +119,18 @@
 }
 
 .experiences__experience {
-    background: navy;
+    background: var(--color-bg-variant);
     height: 18rem;
     min-width: 28rem;
     padding: 1.5rem;
     border-radius: 2rem;
     transition: var(--transition);
+    border: 1px solid transparent;
 }
 
 .experiences__experience:hover {
-    background: var(--color-bg-variant);
+    background: transparent;
+    border-color: var(--color-primary);
 }
 
 .experiences__item-image-container {

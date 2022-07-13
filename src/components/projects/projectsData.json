@@ -8,11 +8,31 @@
       "content": {
         "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quis quas iste quisquam vel reprehenderit quam fugiat ea aliquam? Numquam, voluptatibus accusantium aliquam mollitia possimus odio atque nostrum rerum consequatur!\nVoluptate quis quas iste quisquam vel reprehenderit quam fugiat ea aliquam?",
         "images": [
-          "assets/imgs/IMG1.jpg",
-          "assets/imgs/IMG2.jpg",
-          "assets/imgs/IMG3.jpg",
-          "assets/imgs/IMG3.jpg"
-        ]
+          {
+            "url": "assets/imgs/IMG1.jpg",
+            "thumbnailUrl": "assets/imgs/IMG1.jpg",
+            "width": "500",
+            "height": "500"
+          },
+          {
+            "url": "assets/imgs/IMG2.jpg",
+            "thumbnailUrl": "assets/imgs/IMG2.jpg",
+            "width": "500",
+            "height": "500"
+          },
+          {
+            "url": "assets/imgs/IMG3.jpg",
+            "thumbnailUrl": "assets/imgs/IMG3.jpg",
+            "width": "500",
+            "height": "500"
+          },
+          {
+            "url": "assets/imgs/IMG3.jpg",
+            "thumbnailUrl": "assets/imgs/IMG3.jpg",
+            "width": "500",
+            "height": "500"
+          }
+        ]   
       }
     },
     {
@@ -22,12 +42,27 @@
       "explanation": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos cupiditate doloremque ipsam est aperiam ab vitae ullam itaque praesentium? Consequatur.",
       "tags": ["Arduino", "Android Studio", "Databases"],
       "content": {
-        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quis quas iste quisquam vel reprehenderit quam fugiat ea aliquam? Numquam, voluptatibus accusantium aliquam mollitia possimus odio atque nostrum rerum consequatur!",
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quis quas iste quisquam vel reprehenderit quam fugiat ea aliquam? Numquam, voluptatibus accusantium aliquam mollitia possimus odio atque nostrum rerum consequatur!\nVoluptate quis quas iste quisquam vel reprehenderit quam fugiat ea aliquam?",
         "images": [
-          "assets/imgs/IMG1.jpg",
-          "assets/imgs/IMG2.jpg",
-          "assets/imgs/IMG3.jpg"
-        ]
+          {
+            "url": "assets/imgs/IMG1.jpg",
+            "thumbnailUrl": "assets/imgs/IMG1.jpg",
+            "width": "500",
+            "height": "500"
+          },
+          {
+            "url": "assets/imgs/IMG2.jpg",
+            "thumbnailUrl": "assets/imgs/IMG2.jpg",
+            "width": "500",
+            "height": "500"
+          },
+          {
+            "url": "assets/imgs/IMG3.jpg",
+            "thumbnailUrl": "assets/imgs/IMG3.jpg",
+            "width": "500",
+            "height": "500"
+          }
+        ] 
       }
     },
     {
@@ -39,9 +74,24 @@
       "content": {
         "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quis quas iste quisquam vel reprehenderit quam fugiat ea aliquam? Numquam, voluptatibus accusantium aliquam mollitia possimus odio atque nostrum rerum consequatur!",
         "images": [
-          "assets/imgs/IMG1.jpg",
-          "assets/imgs/IMG2.jpg",
-          "assets/imgs/IMG3.jpg"
+          {
+            "url": "assets/imgs/IMG1.jpg",
+            "thumbnailUrl": "assets/imgs/IMG1.jpg",
+            "width": "500",
+            "height": "500"
+          },
+          {
+            "url": "assets/imgs/IMG2.jpg",
+            "thumbnailUrl": "assets/imgs/IMG2.jpg",
+            "width": "500",
+            "height": "500"
+          },
+          {
+            "url": "assets/imgs/IMG3.jpg",
+            "thumbnailUrl": "assets/imgs/IMG3.jpg",
+            "width": "500",
+            "height": "500"
+          }
         ]
       }
     }

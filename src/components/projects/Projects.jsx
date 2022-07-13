@@ -119,8 +119,8 @@ const Projects = () => {
         {
           projectsData.map(({id, image, title, explanation, tags}) => {
             return (
-              <Link to={"/" + id}>
-              <article key={id} className="projects__article">
+              <Link to={"/" + id} key={id}>
+              <article className="projects__article">
                 <div className="projects__item">
                   <div className='projects__item-cta'>
                     <h3>{title}</h3>

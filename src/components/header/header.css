@@ -26,6 +26,13 @@ header > svg {
     margin-top: 2rem;
 }
 
+.header__socials a {
+    color: var(--color-primary);
+}
+.header__socials a:hover {
+    color: white;
+}
+
 
 @keyframes blink {
     0% {
