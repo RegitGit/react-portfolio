@@ -34,7 +34,7 @@ const Project = () => {
                                             height={image.height}
                                         >
                                         {({ ref, open }) => (
-                                            <img className='project__image' ref={ref} onClick={open} src={image.thumbnailUrl} />
+                                            <img className='project__image' ref={ref} onClick={open} src={image.thumbnailUrl} alt={data.id + "-" + index}/>
                                         )}
                                         </Item>
                                     )

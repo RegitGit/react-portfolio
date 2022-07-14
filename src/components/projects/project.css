@@ -43,17 +43,23 @@
 
 .project__image-container {
     margin-top: 4rem;
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1.2rem;
 }
 
 .project__image {
-    width: 80%;
+    width: 20%;
     aspect-ratio: 1 / 1;
     border: 2px var(--color-bg-variant) solid;
     justify-self: center;
     transition: var(--transition);
+}
+
+.project__image:hover {
+    cursor: pointer;
 }
 
 .project__text {

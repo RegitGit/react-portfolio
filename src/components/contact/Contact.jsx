@@ -2,7 +2,7 @@ import React from 'react'
 import { useInView } from 'react-intersection-observer';
 import Typed from 'typed.js';
 import "./contact.css"
-import { AiOutlineMail, AiOutlineWhatsApp } from 'react-icons/ai'
+import { AiOutlineMail, AiOutlinePhone } from 'react-icons/ai'
 
 
 var firstTimeViewed = false;
@@ -59,10 +59,10 @@ const Contact = () => {
               <p className='contact__option-text'>Send a mail</p>
             </article>
           </a>
-          <a href='https://api.whatsapp.com/send?phone=+4915738686393'>
+          <a href='tel:+4915738686393'>
             <article className='contact__option'>
-              <AiOutlineWhatsApp/>
-              <h4>WhatsApp</h4>
+              <AiOutlinePhone/>
+              <h4>Phone number</h4>
               <h5>+49 1573 8686393</h5>
               <p className='contact__option-text'>Send a message</p>
             </article>
