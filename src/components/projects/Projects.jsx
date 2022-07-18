@@ -5,10 +5,16 @@ import Typed from 'typed.js'
 import { useInView } from 'react-intersection-observer'
 import projectsData from "./projectsData.json"
 import { Link, useLocation } from 'react-router-dom'
+import DividerPattern from '../about/DividerPattern'
 
 var firstTimeViewed = false;
 
 const Projects = () => {
+  // height of all projects
+
+
+
+
   const [ ref, inView, entry ] = useInView({
     rootMargin: "-250px",
   });
@@ -107,15 +113,12 @@ const Projects = () => {
 
   return (
     <div>
-      <div className="svg__flex">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fillOpacity="1" d="M0,256L1440,96L1440,320L0,320Z"></path></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200"><path fill="#0099ff" fillOpacity="1" d="M0,96L1440,32L1440,0L0,0Z"></path></svg>
-      </div>
+      <DividerPattern name="3" rotation="183"/>
     <section ref={refProjects} id='projects'>
       <div className='container'>
         <h3 ref={ref} className='typewriter typewriter-blink small-headline'></h3>
       </div>
-      <div className='container projects__container'>
+      <div className='container projects__container' style={{height: 715 + "px"}}>
         {
           projectsData.map(({id, image, title, explanation, tags}) => {
             return (
@@ -124,7 +127,7 @@ const Projects = () => {
                 <div className="projects__item">
                   <div className='projects__item-cta'>
                     <h3>{title}</h3>
-                        <RiSearchEyeLine className='projects__view-img' size={38}/>
+                    <RiSearchEyeLine className='projects__view-img' size={38}/>
                     <div className='projects__tags'>
                       <ul>
                         {

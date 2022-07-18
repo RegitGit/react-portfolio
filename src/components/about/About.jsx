@@ -6,6 +6,7 @@ import { useInView } from 'react-intersection-observer'
 import Typed from 'typed.js'
 import skillsData from "./skillsData.json"
 import experienceData from "./experienceData.json"
+import DividerPattern from './DividerPattern'
 
 var firstTimeViewed = false;
 var firstTimeViewedEx = false;
@@ -110,6 +111,9 @@ const About = () => {
         })
       }
       </div>
+
+      <DividerPattern name="1" rotation="177"/>
+
       <div className='container'>
         <h3 ref={refEx} className='typewriter typewriter-blink small-headline'></h3>
       </div>

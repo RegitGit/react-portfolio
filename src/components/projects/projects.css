@@ -3,6 +3,7 @@
 }
 
 .projects__container {
+    height: 715px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -111,9 +112,9 @@
     background: crimson;
 }
 
-.svg__flex {
-    display: flex;
-    flex-direction: column;
+.svg__container {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 /* TABLET MEDIA QUERIES */

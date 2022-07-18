@@ -3,6 +3,7 @@ import { useInView } from 'react-intersection-observer';
 import Typed from 'typed.js';
 import "./contact.css"
 import { AiOutlineMail, AiOutlinePhone } from 'react-icons/ai'
+import DividerPattern from '../about/DividerPattern';
 
 
 var firstTimeViewed = false;
@@ -42,10 +43,7 @@ const Contact = () => {
 
   return (
     <div>
-      <div className="svg__flex">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280"><path fill="#0099ff" fillOpacity="1" d="M0,218L1440,270L1440,320L0,320Z"></path></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280"><path fill="#0099ff" fillOpacity="1" d="M0,224L1440,160L1440,0L0,0Z"></path></svg>
-      </div>
+      <DividerPattern name="2" rotation="177"/>
       <section ref={refContact} id='contact'>
         <div className='container'>
           <h3 ref={ref} className='typewriter typewriter-blink small-headline'></h3>
