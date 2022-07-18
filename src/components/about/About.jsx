@@ -98,7 +98,7 @@ const About = () => {
       {
         skillsData.map(({id, name, percentage}) => {
           return (
-            <div key={id} className="skills__skill">
+            <div key={name} className="skills__skill">
                 <h3>{name}</h3>
                 <div className="skills__barContainer">
                   <div className="skills__barBG"></div>

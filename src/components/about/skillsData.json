@@ -2,7 +2,7 @@
     {
       "id": 0,
       "name": "JavaScript",
-      "percentage": 75
+      "percentage": 80
     },
     {
       "id": 1,
@@ -12,7 +12,17 @@
     {
       "id": 2,
       "name": "CSS",
-      "percentage": 30
+      "percentage": 50
+    },
+    {
+      "id": 2,
+      "name": "React",
+      "percentage": 40
+    },
+    {
+      "id": 2,
+      "name": "Babylon.js",
+      "percentage": 80
     },
     {
       "id": 3,
@@ -23,5 +33,25 @@
       "id": 4,
       "name": "Unity",
       "percentage": 90
+    },
+    {
+      "id": 4,
+      "name": "Java",
+      "percentage": 60
+    },
+    {
+      "id": 4,
+      "name": "Android Studio",
+      "percentage": 40
+    },
+    {
+      "id": 4,
+      "name": "Python",
+      "percentage": 60
+    },
+    {
+      "id": 4,
+      "name": "Git",
+      "percentage": 70
     }
 ]
