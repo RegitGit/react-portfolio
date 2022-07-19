@@ -2,13 +2,12 @@
     position: absolute;
     top: -400px;
     z-index: 2;
-    mask-image: linear-gradient(white, transparent);
+    mask-image: linear-gradient(white 10%, transparent 80%);
     width: 22rem;
     left: calc(50% - 11rem);
     border-radius: 12rem 12rem 0 0;
     pointer-events: none;
 }
-
 
 .about__cta {
     pointer-events: all;
