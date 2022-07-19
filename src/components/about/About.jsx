@@ -1,6 +1,6 @@
 import React from 'react'
 import "./about.css"
-import MY_IMAGE from "./anon.png"
+import MY_IMAGE from "./zuge_kleiner.png"
 import CV from "./test_corona.pdf"
 import { useInView } from 'react-intersection-observer'
 import Typed from 'typed.js'
@@ -89,7 +89,7 @@ const About = () => {
         <p className='about__aboutMeText'>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, temporibus odit eveniet aliquid sit numquam, cum libero soluta corrupti, quia qui quae velit atque. Explicabo dignissimos facilis consequatur officia porro cum odio impedit ipsam praesentium. Fuga corporis quidem labore molestias quae enim voluptate repellendus ipsum et officiis? Nobis, suscipit iusto!
         </p>
-        <a href={CV} className='about__cta' download>Download CV</a>
+        <a href={CV} className='about__cta' download>Download Lebenslauf</a>
       </div>
       <div className='container'>
         <h3 ref={ref} className='typewriter typewriter-blink small-headline'></h3>

@@ -3,7 +3,7 @@
 }
 
 .projects__container {
-    height: 715px;
+    /* height: 715px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;

@@ -118,7 +118,7 @@ const Projects = () => {
       <div className='container'>
         <h3 ref={ref} className='typewriter typewriter-blink small-headline'></h3>
       </div>
-      <div className='container projects__container' style={{height: 715 + "px"}}>
+      <div className='container projects__container'>
         {
           projectsData.map(({id, image, title, explanation, tags}) => {
             return (

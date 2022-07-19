@@ -23,7 +23,7 @@ const Header = () => {
 
   useEffect(() => {
     new Typed(el.current, {
-      strings: ["Hello, I'm"],
+      strings: ["Hi, ich bin"],
       startDelay: 300,
       typeSpeed: 130,
       showCursor: false,
@@ -32,7 +32,7 @@ const Header = () => {
           el.current.classList.remove("typewriter");
           el2.current.classList.add("typewriter");
           new Typed(el2.current, {
-            strings: ["Regit"],
+            strings: ["Steffen"],
             startDelay: 60,
             typeSpeed: 150,
             showCursor: false,
@@ -41,7 +41,7 @@ const Header = () => {
               el2.current.classList.remove("typewriter");
               el3.current.classList.add("typewriter");
               new Typed(el3.current, {
-                strings: ["Unity Developer", "Web Developer", "3D Developer", "App Developer??", "Developer."],
+                strings: ["Unity-Entwickler", "Web-Entwickler", "3D-Entwickler", "App-Entwickler??", "Entwickler."],
                 startDelay: 200,
                 typeSpeed: 60,
                 backSpeed: 20,

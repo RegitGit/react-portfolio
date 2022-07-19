@@ -59,7 +59,7 @@
 }
 
 .project__image:hover {
-    cursor: pointer;
+    cursor: zoom-in;
 }
 
 .project__text {
