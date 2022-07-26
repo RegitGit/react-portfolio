@@ -50,12 +50,12 @@
 
 .projects__item {
     height: 13rem;
+    
 }
 
 .projects__item-image {
     border-radius: 2.4rem;
     aspect-ratio: 1 / 1;
-
 }
 
 .projects__item-cta {

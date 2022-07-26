@@ -38,7 +38,7 @@ const About = () => {
     firstTimeViewed = true;
     
     new Typed(entry.target, {
-      strings: ["My skills"],
+      strings: ["Meine Kenntnisse"],
       startDelay: 100,
       typeSpeed: 50,
       showCursor: false,
@@ -55,7 +55,7 @@ const About = () => {
     document.getElementById("experience__timelineBox-bg").style.height = "100%";
     
     new Typed(entryEx.target, {
-      strings: ["My experience"],
+      strings: ["Meine Erfahrung"],
       startDelay: 100,
       typeSpeed: 50,
       showCursor: false,
@@ -87,7 +87,7 @@ const About = () => {
       </div>
       <div className="about__aboutMeTextContainer">
         <p className='about__aboutMeText'>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, temporibus odit eveniet aliquid sit numquam, cum libero soluta corrupti, quia qui quae velit atque. Explicabo dignissimos facilis consequatur officia porro cum odio impedit ipsam praesentium. Fuga corporis quidem labore molestias quae enim voluptate repellendus ipsum et officiis? Nobis, suscipit iusto!
+          Das Entwickeln begleitet mich schon seit meinen jungen Jahren. Ob bei einem selbst entwickelten Spielchen oder bei einer App, stand immer das Kreiren nach eigenen Vorstellungen im Vordergrund. Demnach habe ich mich auch für ein Studium entschieden, das alle Aspekte des Entwicklungprozesses kombiniert hat: genannt Mediendesigninformatik.
         </p>
         <a href={CV} className='about__cta' download>Download Lebenslauf</a>
       </div>
@@ -131,7 +131,7 @@ const About = () => {
                     <div className="experiences__experience">
                         <div className='experiences__header'>
                           <div className='experiences__item-image-container'>
-                            <img src={image} alt={title} className="projects__item-image"/>
+                            <img src={image} alt={title} className="experiences__item-image"/>
                           </div>
                           <div>
                               <h2>{title}</h2>

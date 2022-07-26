@@ -1,38 +1,15 @@
 [
     {
       "id": 0,
-      "image": "assets/imgs/IMG1.jpg",
-      "title": "Title",
-      "explanation": "Test",
-      "tags": ["JS", "CSS"],
+      "image": "assets/imgs/projects/portfolio_website/cover.png",
+      "title": "Diese Seite",
+      "explanation": "Für die Erstellung dieser Portfolio-Seite wurde zum ersten Mal React benutzt.",
+      "tags": ["JavaScript", "CSS", "React.js", "Babylon.js"],
       "content": {
-        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quis quas iste quisquam vel reprehenderit quam fugiat ea aliquam? Numquam, voluptatibus accusantium aliquam mollitia possimus odio atque nostrum rerum consequatur!\nVoluptate quis quas iste quisquam vel reprehenderit quam fugiat ea aliquam?",
+        "text": "Die Webseite wurde anhand eines Tutorials (https://www.youtube.com/watch?v=G-Cr00UYokU) aufgebaut und dann weiter persönlich abgeändert. Dabei lieferte das Tutorial das Grundverständnis dafür, wie eine React Webseite funktioniert. Daraufhin wurden nach und nach fortgeschrittenere Konzepte von React genutzt, um die Seite ansprechender und einfacher erweiterbar zu machen.",
         "images": [
-          {
-            "url": "assets/imgs/IMG1.jpg",
-            "thumbnailUrl": "assets/imgs/IMG1.jpg",
-            "width": "252",
-            "height": "200"
-          },
-          {
-            "url": "assets/imgs/IMG2.jpg",
-            "thumbnailUrl": "assets/imgs/IMG2.jpg",
-            "width": "740",
-            "height": "740"
-          },
-          {
-            "url": "assets/imgs/IMG3.jpg",
-            "thumbnailUrl": "assets/imgs/IMG3.jpg",
-            "width": "640",
-            "height": "853"
-          },
-          {
-            "url": "assets/imgs/IMG3.jpg",
-            "thumbnailUrl": "assets/imgs/IMG3.jpg",
-            "width": "640",
-            "height": "853"
-          }
-        ]   
+          
+        ]
       }
     },
     {

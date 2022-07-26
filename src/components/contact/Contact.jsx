@@ -28,7 +28,7 @@ const Contact = () => {
     firstTimeViewed = true;
     
     new Typed(entry.target, {
-      strings: ["My contact info"],
+      strings: ["Meine Kontaktinfo"],
       startDelay: 100,
       typeSpeed: 50,
       showCursor: false,
@@ -54,15 +54,15 @@ const Contact = () => {
               <AiOutlineMail/>
               <h4>Email</h4>
               <h5>steffenthom96@gmail.com</h5>
-              <p className='contact__option-text'>Send a mail</p>
+              <p className='contact__option-text'>Mail schreiben</p>
             </article>
           </a>
           <a href='tel:+4915738686393'>
             <article className='contact__option'>
               <AiOutlinePhone/>
-              <h4>Phone number</h4>
+              <h4>Mobilnummer</h4>
               <h5>+49 1573 8686393</h5>
-              <p className='contact__option-text'>Send a message</p>
+              <p className='contact__option-text'>Anruf starten</p>
             </article>
           </a>
         </div>

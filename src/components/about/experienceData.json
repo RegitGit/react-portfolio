@@ -1,22 +1,22 @@
 [
   {
     "id": 0,
-    "image": "assets/imgs/IMG2.jpg",
+    "image": "assets/imgs/B12.png",
     "title": "Studio B12",
-    "subtitle": "Unity/Web Developer",
-    "dateEnd": "Now",
+    "subtitle": "Unity-/Web-Developer",
+    "dateEnd": "Aktuell",
     "dateStart": "Date",
-    "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, ad!",
+    "text": "In dem Studio für digitale Kommunikation bin ich für die Implementation der interaktiven Anwendungen in Unity und in WebGL verantwortlich. Für die enge Zusammenarbeit mit den Designern aus dem Team, ist das aus eigenen Projekten und vor allem aus dem Studium erlangte interdisziplinare Know-How sehr hilfreich.",
     "link": "https://studio-b12.de/"
   },
   {
     "id": 1,
-    "image": "assets/imgs/IMG1.jpg",
-    "title": "HS Hannover",
+    "image": "assets/imgs/HS.svg",
+    "title": "Hochschule Hannover",
     "subtitle": "Mediendesigninformatik B.Sc.",
     "dateEnd": "Date",
     "dateStart": "Date",
-    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sapiente deleniti tempora cumque saepe vel.",
+    "text": "Das Studium Mediendesigninformatik stellt eine fachübergreifende Ausbildung dar. Mit dem Schwerpunkt auf der Informatik gelegen, erlernt man auch die dahingehenden Verknüpfungen der designspezifischen Aspekte in der Medienbranche.",
     "link": "https://f4.hs-hannover.de/studium/bachelor-studiengaenge/mediendesigninformatik-mdi/"
   }
 ]

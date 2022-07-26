@@ -24,7 +24,7 @@
 .about__aboutMeTextContainer {
     position: relative;
     z-index: 3;
-    width: 30%;
+    width: 32%;
     margin: 0 auto;
     text-align: center;
 }
@@ -136,9 +136,15 @@
 .experiences__item-image-container {
     float: left;
     width: 6rem;
+    height: 6rem;
     margin-right: 1rem;
-    border-radius: 0.4rem;
-    /* background-color: var(--color-primary-variant); */
+}
+
+.experiences__item-image {
+    border-radius: 1.4rem;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .experiences__header {

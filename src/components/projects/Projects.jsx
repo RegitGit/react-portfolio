@@ -33,7 +33,7 @@ const Projects = () => {
     firstTimeViewed = true;
     
     new Typed(entry.target, {
-      strings: ["My recent work"],
+      strings: ["Meine jüngsten Projekte"],
       startDelay: 100,
       typeSpeed: 50,
       showCursor: false,
