@@ -3,10 +3,10 @@
       "id": 0,
       "image": "assets/imgs/projects/portfolio_website/cover.png",
       "title": "Diese Seite",
-      "explanation": "Für die Erstellung dieser Portfolio-Seite wurde zum ersten Mal React benutzt.",
+      "explanation": "Eine Portfolio-Seite, aufgebaut aus verschiedensten Frameworks.",
       "tags": ["JavaScript", "CSS", "React.js", "Babylon.js"],
       "content": {
-        "text": "Die Webseite wurde anhand eines Tutorials (https://www.youtube.com/watch?v=G-Cr00UYokU) aufgebaut und dann weiter persönlich abgeändert. Dabei lieferte das Tutorial das Grundverständnis dafür, wie eine React Webseite funktioniert. Daraufhin wurden nach und nach fortgeschrittenere Konzepte von React genutzt, um die Seite ansprechender und einfacher erweiterbar zu machen.",
+        "text": "Für diese Webseite wollte ich mein Wissen in der Webentwicklung vertiefen und ein Framework zur Frontend-Entwicklung lernen und nutzen. Das Framework ist React.js geworden. Den Grundbaustein hat ein Tutorial gelegt: https://www.youtube.com/watch?v=G-Cr00UYokU. Fortgeschrittene Techniken von React wurden dann durch persönliche Anpassungen an der Seite vertieft.",
         "images": [
           
         ]
@@ -15,11 +15,11 @@
     {
       "id": 1,
       "image": "assets/imgs/IMG2.jpg",
-      "title": "Title2",
-      "explanation": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos cupiditate doloremque ipsam est aperiam ab vitae ullam itaque praesentium? Consequatur.",
-      "tags": ["Arduino", "Android Studio", "Databases"],
+      "title": "Fitness-Tracker-App",
+      "explanation": "Eine Fitness-Tracker-App mit Funktionen nach meinen eigenen Vorstellungen.",
+      "tags": ["Android Studio", "Java", "Databases"],
       "content": {
-        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quis quas iste quisquam vel reprehenderit quam fugiat ea aliquam? Numquam, voluptatibus accusantium aliquam mollitia possimus odio atque nostrum rerum consequatur!\nVoluptate quis quas iste quisquam vel reprehenderit quam fugiat ea aliquam?",
+        "text": "Die Ideen für die App entwickelten sich während des Trainieren im Fitnesstudios. Ich entschied mich eine eigene App zu erstellen und mein Wissen in Android Studio zu erweitern, bevor ich lange mit Suchen nach einer App mit der Hälfte meiner gewollten Funktionen verbringe. Das Design wurde dabei in den Hintergrund geschoben. Der Großteil bestand aus dem Verstehen von und Arbeiten mit Datenbanken, um wichtige Meilensteine beim Fitnesstraining zu erfassen und vergleichbar zu machen.",
         "images": [
           {
             "url": "assets/imgs/IMG1.jpg",
@@ -45,11 +45,71 @@
     {
       "id": 2,
       "image": "assets/imgs/IMG3.jpg",
-      "title": "Title3",
-      "explanation": "Test",
-      "tags": ["JS", "HTML"],
+      "title": "Lass uns mal wir sein",
+      "explanation": "Ein kreatives Passion-Projekt für ein Geburtstagsgeschenk.",
+      "tags": ["Photoshop", "After Effects", "Premiere", "Audition"],
       "content": {
-        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quis quas iste quisquam vel reprehenderit quam fugiat ea aliquam? Numquam, voluptatibus accusantium aliquam mollitia possimus odio atque nostrum rerum consequatur!",
+        "text": "Der gesprochene Text der Autorin wurde mit ausgeliehenem Equipment aufgenommen, dann aufbereitet und zusammengeschnitten. Nach Überlegungen wie man den Text gut präsentieren kann, habe ich ein Konzept erstellt, das auf einzelnen Zeichnungen aufbaut. Die Zeichnungen wurden in Auftrag gegeben und anschließend für einem Film aufeinander abgepasst und editiert.",
+        "images": [
+          {
+            "url": "assets/imgs/IMG1.jpg",
+            "thumbnailUrl": "assets/imgs/IMG1.jpg",
+            "width": "500",
+            "height": "500"
+          },
+          {
+            "url": "assets/imgs/IMG2.jpg",
+            "thumbnailUrl": "assets/imgs/IMG2.jpg",
+            "width": "500",
+            "height": "500"
+          },
+          {
+            "url": "assets/imgs/IMG3.jpg",
+            "thumbnailUrl": "assets/imgs/IMG3.jpg",
+            "width": "500",
+            "height": "500"
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "image": "assets/imgs/IMG3.jpg",
+      "title": "Soundful Experience",
+      "explanation": "Bachelorarbeit zu den Auswirkungen von Bewegungsgeräuschen in Multiplayer Virtual Reality Anwendungen.",
+      "tags": ["Unity", "FMOD", "Resonance Audio", "VR", "Networking"],
+      "content": {
+        "text": "Anhand von vier ausgwählten Bewegungsgeräuschen wurde die gefühlte Präsenz in einem Raum in Virtual Reality gewertet. Die verschiedenen, sich damit befassenen Skalen, wurden auf unterschiedliche Versuchsvorraussetzungen angewandt. So wurde festgestellt, ob es eine Steigerung der Präsenz durch die genutzten Audio Technologien gibt wenn diese eingeschaltet sind und wie sich dies ändert wenn der Mitspieler sich im selben oder einen unterschiedlichen Raum befindet.",
+        "images": [
+          {
+            "url": "assets/imgs/IMG1.jpg",
+            "thumbnailUrl": "assets/imgs/IMG1.jpg",
+            "width": "500",
+            "height": "500"
+          },
+          {
+            "url": "assets/imgs/IMG2.jpg",
+            "thumbnailUrl": "assets/imgs/IMG2.jpg",
+            "width": "500",
+            "height": "500"
+          },
+          {
+            "url": "assets/imgs/IMG3.jpg",
+            "thumbnailUrl": "assets/imgs/IMG3.jpg",
+            "width": "500",
+            "height": "500"
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "image": "assets/imgs/IMG3.jpg",
+      "title": "Bleeping Sheep",
+      "explanation": "Ein Unity Multiplayer Spiel entwickelt als Abschlussprojekt in einem Team aus zehn Studenten.",
+      "tags": ["Unity", "FMOD"],
+      "content": {
+        "text": "In diesem Projekt war ich größtenteils für die Soundkulisse und entsprechende Events verantwortlich. Dazu zählte Auswahl und Anpassung von Sounds und Musik, sowie deren Implementierung über FMOD. Hierbei ging es vor allem ein einzigartiges und fesselndes Spielerlebnis über den Sound zu generieren.",
         "images": [
           {
             "url": "assets/imgs/IMG1.jpg",
