@@ -103,10 +103,10 @@
       }
     },
     {
-      "id": 3,
+      "id": 4,
       "image": "assets/imgs/IMG3.jpg",
       "title": "Bleeping Sheep",
-      "explanation": "Ein Unity Multiplayer Spiel entwickelt als Abschlussprojekt in einem Team aus zehn Studenten.",
+      "explanation": "Ein Unity Multiplayer Spiel. Entwickelt als Abschlussprojekt in einem Team aus zehn Studenten.",
       "tags": ["Unity", "FMOD"],
       "content": {
         "text": "In diesem Projekt war ich größtenteils für die Soundkulisse und entsprechende Events verantwortlich. Dazu zählte Auswahl und Anpassung von Sounds und Musik, sowie deren Implementierung über FMOD. Hierbei ging es vor allem ein einzigartiges und fesselndes Spielerlebnis über den Sound zu generieren.",
